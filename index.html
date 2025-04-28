@@ -79,9 +79,9 @@
 <button class="start-btn" onclick="startNow()">ابدأ الآن</button>
 
 <div class="language-buttons">
-  <button onclick="setLanguage('ar')">العربية</button>
-  <button onclick="setLanguage('en')">English</button>
-  <button onclick="setLanguage('he')">עברית</button>
+  <button id="btn-ar" onclick="setLanguage('ar')">العربية</button>
+  <button id="btn-en" onclick="setLanguage('en')">English</button>
+  <button id="btn-he" onclick="setLanguage('he')">עברית</button>
 </div>
 
 <script>
@@ -92,32 +92,42 @@ function setLanguage(lang) {
     document.getElementById('restaurant-name').innerText = 'مطعم شيف وليد';
     document.getElementById('welcome-message').innerText = 'أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!';
     document.querySelector('.start-btn').innerText = 'ابدأ الآن';
-    document.querySelector('.start-btn').onclick = function() {
-      window.location.href = "menu-options-ar.html"; // الرابط إلى صفحة الخيارات بالعربية
-    };
+    // Show only the English and Hebrew options
+    document.getElementById('btn-ar').style.display = 'none';
+    document.getElementById('btn-en').style.display = 'inline-block';
+    document.getElementById('btn-he').style.display = 'inline-block';
   } else if (lang === 'en') {
     document.documentElement.lang = 'en';
     document.documentElement.dir = 'ltr';
     document.getElementById('restaurant-name').innerText = "Chef Waleed Restaurant";
     document.getElementById('welcome-message').innerText = "Welcome to our restaurant, we hope you enjoy your experience!";
     document.querySelector('.start-btn').innerText = 'Start Now';
-    document.querySelector('.start-btn').onclick = function() {
-      window.location.href = "menu-options-en.html"; // الرابط إلى صفحة الخيارات بالإنجليزية
-    };
+    // Show only the Arabic and Hebrew options
+    document.getElementById('btn-ar').style.display = 'inline-block';
+    document.getElementById('btn-en').style.display = 'none';
+    document.getElementById('btn-he').style.display = 'inline-block';
   } else if (lang === 'he') {
     document.documentElement.lang = 'he';
     document.documentElement.dir = 'rtl';
     document.getElementById('restaurant-name').innerText = "מסעדת שף וליד";
     document.getElementById('welcome-message').innerText = "ברוכים הבאים למסעדה שלנו, אנו מאחלים לכם חוויה מהנה!";
     document.querySelector('.start-btn').innerText = 'התחל עכשיו';
-    document.querySelector('.start-btn').onclick = function() {
-      window.location.href = "menu-options-he.html"; // الرابط إلى صفحة الخيارات بالعبرية
-    };
+    // Show only the Arabic and English options
+    document.getElementById('btn-ar').style.display = 'inline-block';
+    document.getElementById('btn-en').style.display = 'inline-block';
+    document.getElementById('btn-he').style.display = 'none';
   }
 }
 
 function startNow() {
-  // سيتم تغيير الرابط بناءً على اللغة المختارة في الزر
+  // Redirect to the appropriate menu page based on the selected language
+  if (document.documentElement.lang === 'ar') {
+    window.location.href = "menu-options-ar.html"; // Arabic menu page
+  } else if (document.documentElement.lang === 'en') {
+    window.location.href = "menu-options-en.html"; // English menu page
+  } else if (document.documentElement.lang === 'he') {
+    window.location.href = "menu-options-he.html"; // Hebrew menu page
+  }
 }
 </script>
 
