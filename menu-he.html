@@ -3,191 +3,651 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>תפריט - שף וליד</title>
+  <title>תפריט - שף וואליד</title>
   <style>
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background: #f9f6f1;
-      color: #333;
+      background-color: #0d0d0d;
+      color: #f0e6d2;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
     header {
-      background-color: #5A2D0C;
-      padding: 1.5rem;
+      background-color: #1a1a1a;
       text-align: center;
-      color: #fff;
-      font-size: 2rem;
-      font-weight: bold;
+      padding: 2rem;
+    }
+    header img {
+      width: 150px;
+      height: auto;
     }
     main {
       flex: 1;
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    section {
+    .menu-section {
+      width: 100%;
+      max-width: 1000px;
       margin-bottom: 3rem;
     }
-    h2 {
-      border-bottom: 2px solid #cfa968;
+    .menu-section h2 {
+      color: #d4af37;
+      border-bottom: 2px solid #d4af37;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #5A2D0C;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #fff;
-      margin: 0.5rem 0;
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
       padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      transition: 0.3s;
+    }
+    .card:hover {
+      background-color: #292929;
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      background-color: #333;
+      margin-left: 1rem;
+      object-fit: cover;
+    }
+    .card-content {
+      flex-grow: 1;
+    }
+    .card-content h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+    .card-content p {
+      margin: 0;
+      font-size: 1rem;
+      color: #f0e6d2;
+    }
+    .price {
       font-size: 1.1rem;
+      color: #ffd700;
+      font-weight: bold;
+      margin-right: 1rem;
     }
     footer {
-      background-color: #5A2D0C;
-      color: #fff;
+      background-color: #1a1a1a;
       text-align: center;
-      padding: 1rem;
-      font-size: 1rem;
+      padding: 1.5rem;
     }
     footer a {
-      color: #ffd700;
-      margin: 0 10px;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
     }
     footer a:hover {
-      text-decoration: underline;
+      background-color: #ffd700;
     }
   </style>
 </head>
 <body>
 
 <header>
-  ברוכים הבאים למסעדת השף ואליד, מאחלים לכם ארוחה מהנה!
+  <img src="https://via.placeholder.com/150x100.png?text=Chef+Waleed+Logo" alt="Chef Waleed Logo">
 </header>
 
 <main>
 
-<section id="salads">
+<section class="menu-section">
   <h2>סלטים</h2>
-  <ul>
-    <li>סלט עוף - ₪60</li>
-    <li>סלט ערבי גדול - ₪30</li>
-    <li>סלט יווני - ₪45</li>
-    <li>סלט חלומי - ₪65</li>
-    <li>פתוש גדול - ₪55</li>
-    <li>סלט פילה - ₪89</li>
-    <li>טאבולה של השף - ₪47</li>
-    <li>מבחר סלטים ליחיד - ₪45</li>
-    <li>סלט טוסט - ₪60</li>
-    <li>טאבולה גדולה - ₪45</li>
-    <li>חומוס - ₪18</li>
-  </ul>
-</section>
 
-<section id="main-courses">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סלט עוף</h3>
+      <p>פרוסות עוף בגריל עם ירקות טריים.</p>
+    </div>
+    <div class="price">₪60</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סלט ערבי גדול</h3>
+      <p>תערובת ירקות טריים עם שמן זית ולימון.</p>
+    </div>
+    <div class="price">₪30</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סלט יווני</h3>
+      <p>גבינת פטה, זיתים וירקות טריים.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סלט חלומי</h3>
+      <p>גבינת חלומי בגריל עם ירקות טריים.</p>
+    </div>
+    <div class="price">₪65</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>מנות עיקריות</h2>
-  <ul>
-    <li>קלמארי מטוגן/צלוי - ₪80</li>
-    <li>חזה עוף - ₪75</li>
-    <li>מגש דגים זוגי - ₪210</li>
-    <li>דניס מטוגן/צלוי - ₪95</li>
-    <li>מגש בשרים זוגי - ₪280</li>
-    <li>אנטריקוט ווגיו - ₪180</li>
-    <li>פילה - ₪120</li>
-    <li>שרימפס מטוגן/צלוי - ₪90</li>
-    <li>סלמון - ₪95</li>
-  </ul>
-</section>
 
-<section id="appetizers">
-  <h2>מנות פתיחה</h2>
-  <ul>
-    <li>קובה (יחידה) - ₪7</li>
-    <li>מאפים - ₪33</li>
-    <li>ארנצ'יני - ₪40</li>
-    <li>הום פרייז - ₪30</li>
-    <li>קרפצ'יו פילה - ₪52</li>
-    <li>חציל עם טחינה - ₪35</li>
-    <li>מגש מנות פתיחה - ₪50</li>
-    <li>מיני עראיס - ₪40</li>
-    <li>צ'יפס - ₪17</li>
-    <li>פטריות ממולאות גבינה - ₪50</li>
-    <li>מבחר 4 מנות פתיחה - ₪100</li>
-    <li>גבינה מטוגנת - ₪33</li>
-  </ul>
-</section>
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>קלמרי מטוגן/על האש</h3>
+      <p>קלמרי טרי מטוגן או בגריל לפי בחירה.</p>
+    </div>
+    <div class="price">₪80</div>
+  </div>
 
-<section id="drinks">
-  <h2>שתייה קרה</h2>
-  <ul>
-    <li>מילקשייק וניל - ₪27</li>
-    <li>מילקשייק אוראו - ₪27</li>
-    <li>מילקשייק תות - ₪27</li>
-    <li>מילקשייק שוקולד - ₪27</li>
-    <li>XL (משקה אנרגיה) - ₪13</li>
-    <li>מוחיטו - ₪30</li>
-    <li>סודה - ₪12</li>
-    <li>מים - ₪17</li>
-    <li>פנטה - ₪13</li>
-    <li>מיץ ענבים - ₪13</li>
-    <li>קולה זירו - ₪13</li>
-    <li>ספרייט - ₪13</li>
-    <li>קולה - ₪13</li>
-  </ul>
-</section>
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>חזה עוף</h3>
+      <p>חזה עוף מתובל וצלוי על האש.</p>
+    </div>
+    <div class="price">₪75</div>
+  </div>
 
-<section id="juices">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>פלטת דגים זוגית</h3>
+      <p>מבחר דגים טריים בגריל או מטוגן.</p>
+    </div>
+    <div class="price">₪210</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>דניס מטוגן/על האש</h3>
+      <p>דג דניס טרי עם רוטב לימון.</p>
+    </div>
+    <div class="price">₪95</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>פלטת בשרים זוגית</h3>
+      <p>מבחר נתחי בשר מובחרים בגריל.</p>
+    </div>
+    <div class="price">₪280</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>אנטרקוט ואגיו</h3>
+      <p>סטייק אנטרקוט ואגיו יוקרתי על הגריל.</p>
+    </div>
+    <div class="price">₪180</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>פילה</h3>
+      <p>סטייק פילה על האש עם ירקות קלויים.</p>
+    </div>
+    <div class="price">₪120</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>שרימפס מטוגן/על האש</h3>
+      <p>שרימפס טרי מטוגן או על האש עם תיבול.</p>
+    </div>
+    <div class="price">₪90</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סלמון</h3>
+      <p>פילה סלמון עסיסי בגריל או מטוגן.</p>
+    </div>
+    <div class="price">₪95</div>
+  </div>
+
+</section>
+<section class="menu-section">
+  <h2>מנות ראשונות</h2>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>קובה (יחידה)</h3>
+      <p>כדורי קובה ממולאים בבשר וצנוברים.</p>
+    </div>
+    <div class="price">₪7</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מאפים</h3>
+      <p>מבחר מאפים טריים מהתנור.</p>
+    </div>
+    <div class="price">₪33</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ארנצ'יני</h3>
+      <p>כדורי אורז איטלקיים ממולאים בגבינה.</p>
+    </div>
+    <div class="price">₪40</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>הום פרייז</h3>
+      <p>תפוחי אדמה מטוגנים בסגנון ביתי.</p>
+    </div>
+    <div class="price">₪30</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>קרפצ'יו פילה</h3>
+      <p>פרוסות דקות של פילה בקר עם רוטב ייחודי.</p>
+    </div>
+    <div class="price">₪52</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>חציל עם טחינה</h3>
+      <p>חציל קלוי מוגש עם רוטב טחינה עשיר.</p>
+    </div>
+    <div class="price">₪35</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>פלטת מנות ראשונות</h3>
+      <p>מבחר טעים ממנות ראשונות שונות.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מיני ערייס</h3>
+      <p>פיתות קטנות ממולאות בבשר על הגריל.</p>
+    </div>
+    <div class="price">₪40</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>צ'יפס</h3>
+      <p>תפוחי אדמה מטוגנים קראנצ'יים.</p>
+    </div>
+    <div class="price">₪17</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>פטריות ממולאות גבינה</h3>
+      <p>פטריות אפויות ממולאות בגבינה מותכת.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מיקס מנות ראשונות (4 סוגים)</h3>
+      <p>מבחר של ארבעה סוגי מנות ראשונות.</p>
+    </div>
+    <div class="price">₪100</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>גבינה מטוגנת</h3>
+      <p>גבינות מטוגנות חמות וטעימות.</p>
+    </div>
+    <div class="price">₪33</div>
+  </div>
+
+</section>
+<section class="menu-section">
+  <h2>משקאות קרים</h2>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מילקשייק וניל</h3>
+      <p>מילקשייק בטעם וניל קלאסי.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מילקשייק אוראו</h3>
+      <p>מילקשייק עשיר עם עוגיות אוראו.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מילקשייק תות</h3>
+      <p>מילקשייק בטעם תות טבעי וטרי.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מילקשייק שוקולד</h3>
+      <p>מילקשייק עשיר בטעם שוקולד.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>XL משקה אנרגיה</h3>
+      <p>משקה אנרגיה מרענן.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מוחיטו</h3>
+      <p>משקה לימון-נענע מרענן.</p>
+    </div>
+    <div class="price">₪30</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סודה</h3>
+      <p>מים מוגזים קרים ומרעננים.</p>
+    </div>
+    <div class="price">₪12</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מים</h3>
+      <p>בקבוק מים מינרליים טבעיים.</p>
+    </div>
+    <div class="price">₪17</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>פנטה</h3>
+      <p>משקה מוגז בטעם תפוז.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מיץ ענבים</h3>
+      <p>מיץ ענבים טבעי ומרענן.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>קוקה קולה זירו</h3>
+      <p>קולה ללא סוכר.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ספרייט</h3>
+      <p>משקה מוגז בטעם לימון מרענן.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>קוקה קולה</h3>
+      <p>קולה קלאסית מרעננת.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>מיצים טבעיים</h2>
-  <ul>
-    <li>מיץ גזר - ₪20</li>
-    <li>מיץ תפוזים וגזר - ₪20</li>
-    <li>מיץ תפוזים - ₪20</li>
-    <li>שייק פירות - ₪25</li>
-    <li>גרוס - ₪25</li>
-    <li>לימונדה - ₪20</li>
-  </ul>
-</section>
 
-<section id="desserts">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מיץ גזר</h3>
+      <p>מיץ גזר טבעי ובריא.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מיץ תפוז וגזר</h3>
+      <p>מיץ טבעי מתפוזים וגזרים טריים.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>מיץ תפוזים</h3>
+      <p>מיץ תפוזים סחוט טרי.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>שייק פירות</h3>
+      <p>שייק מרענן עם פירות טריים.</p>
+    </div>
+    <div class="price">₪25</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>גרוס (מיץ קפוא)</h3>
+      <p>משקה קפוא טעים בטעמים שונים.</p>
+    </div>
+    <div class="price">₪25</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>לימונדה</h3>
+      <p>לימונדה קרה טבעית ומרעננת.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>קינוחים</h2>
-  <ul>
-    <li>עוגת גבינה - ₪40</li>
-    <li>עוגה חמה - ₪45</li>
-    <li>סניקרס - ₪45</li>
-    <li>סן סבסטיאן - ₪45</li>
-    <li>ספלי - ₪45</li>
-    <li>סושי אוראו - ₪45</li>
-  </ul>
-</section>
 
-<section id="arageel">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>עוגת גבינה</h3>
+      <p>עוגת גבינה קלאסית עשירה וטעימה.</p>
+    </div>
+    <div class="price">₪40</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>עוגה חמה</h3>
+      <p>עוגת שוקולד חמה עם ליבה נוזלית.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סניקרס</h3>
+      <p>עוגת שוקולד בטעם סניקרס.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סן סבסטיאן</h3>
+      <p>עוגת גבינה שרופה בסגנון סן סבסטיאן.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סופלה</h3>
+      <p>עוגת שוקולד חמה עם מילוי נוזלי עשיר.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>סושי אוראו</h3>
+      <p>גלילות עוגיות אוראו מצופות שוקולד.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>נרגילות</h2>
-  <ul>
-    <li>נענע לואיזה - ₪50</li>
-    <li>אוכמניות - ₪50</li>
-    <li>שמי - ₪50</li>
-    <li>תפוחים כפולים - ₪50</li>
-    <li>תפוח - ₪50</li>
-    <li>LOVE66 - ₪50</li>
-  </ul>
-</section>
 
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>נענע</h3>
+      <p>נרגילה בטעם נענע מרענן.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>תות</h3>
+      <p>נרגילה בטעם תות מתוק.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>שמי</h3>
+      <p>נרגילה קלאסית בטעם שמי מקורי.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>תפוח כפול</h3>
+      <p>נרגילה בטעם תפוח אדום ותפוח ירוק.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>תפוח</h3>
+      <p>נרגילה בטעם תפוח קלאסי.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>Love 66</h3>
+      <p>נרגילה בטעם פירות טרופיים פופולרי.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+</section>
 </main>
 
 <footer>
-  <p>לשינוי שפה:
-    <a href=\"menu-ar.html\">العربية</a> |
-    <a href=\"menu-en.html\">English</a>
-  </p>
+  <a href="index.html">לחזרה לעמוד הראשי</a>
 </footer>
 
 </body>
