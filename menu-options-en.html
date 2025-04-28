@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Section - Chef Waleed Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0e6d2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header img {
+      width: 180px;
+      height: auto;
+      margin: 2rem 0;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #d4af37;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 1000px;
+      padding-bottom: 2rem;
+    }
+    .option-card {
+      background-color: #1a1a1a;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.3s;
+    }
+    .option-card:hover {
+      background-color: #292929;
+    }
+    .option-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      background-color: #333;
+    }
+    .option-card h2 {
+      font-size: 1.2rem;
+      color: #ffd700;
+      margin: 0.5rem 0;
+    }
+    footer {
+      margin: 2rem 0;
+    }
+    footer a {
+      background-color: #d4af37;
+      color: #0d0d0d;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    footer a:hover {
+      background-color: #ffd700;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
+</header>
+
+<h1>Choose the desired section</h1>
+
+<div class="options">
+  <div class="option-card" onclick="goToSection('salads')">
+    <img src="#" alt="Salads">
+    <h2>Salads</h2>
+  </div>
+  <div class="option-card" onclick="goToSection('main-dishes')">
+    <img src="#" alt="Main Dishes">
+    <h2>Main Dishes</h2>
+  </div>
+  <div class="option-card" onclick="goToSection('drinks')">
+    <img src="#" alt="Drinks">
+    <h2>Drinks</h2>
+  </div>
+  <div class="option-card" onclick="goToSection('juices')">
+    <img src="#" alt="Juices">
+    <h2>Natural Juices</h2>
+  </div>
+  <div class="option-card" onclick="goToSection('desserts')">
+    <img src="#" alt="Desserts">
+    <h2>Desserts</h2>
+  </div>
+  <div class="option-card" onclick="goToSection('hookahs')">
+    <img src="#" alt="Hookahs">
+    <h2>Hookahs</h2>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">Back to Home Page</a>
+</footer>
+
+<script>
+function goToSection(section) {
+  if (section === 'salads') {
+    window.location.href = "salads-en.html";
+  } else if (section === 'main-dishes') {
+    window.location.href = "main-dishes-en.html";
+  } else if (section === 'drinks') {
+    window.location.href = "drinks-en.html";
+  } else if (section === 'juices') {
+    window.location.href = "juices-en.html";
+  } else if (section === 'desserts') {
+    window.location.href = "desserts-en.html";
+  } else if (section === 'hookahs') {
+    window.location.href = "hookahs-en.html";
+  }
+}
+</script>
+
+</body>
+</html>
