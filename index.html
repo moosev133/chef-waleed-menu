@@ -92,23 +92,32 @@ function setLanguage(lang) {
     document.getElementById('restaurant-name').innerText = 'مطعم شيف وليد';
     document.getElementById('welcome-message').innerText = 'أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!';
     document.querySelector('.start-btn').innerText = 'ابدأ الآن';
+    document.querySelector('.start-btn').onclick = function() {
+      window.location.href = "menu-options-ar.html"; // الرابط إلى صفحة الخيارات بالعربية
+    };
   } else if (lang === 'en') {
     document.documentElement.lang = 'en';
     document.documentElement.dir = 'ltr';
     document.getElementById('restaurant-name').innerText = "Chef Waleed Restaurant";
     document.getElementById('welcome-message').innerText = "Welcome to our restaurant, we hope you enjoy your experience!";
     document.querySelector('.start-btn').innerText = 'Start Now';
+    document.querySelector('.start-btn').onclick = function() {
+      window.location.href = "menu-options-en.html"; // الرابط إلى صفحة الخيارات بالإنجليزية
+    };
   } else if (lang === 'he') {
     document.documentElement.lang = 'he';
     document.documentElement.dir = 'rtl';
     document.getElementById('restaurant-name').innerText = "מסעדת שף וליד";
     document.getElementById('welcome-message').innerText = "ברוכים הבאים למסעדה שלנו, אנו מאחלים לכם חוויה מהנה!";
     document.querySelector('.start-btn').innerText = 'התחל עכשיו';
+    document.querySelector('.start-btn').onclick = function() {
+      window.location.href = "menu-options-he.html"; // الرابط إلى صفحة الخيارات بالعبرية
+    };
   }
 }
 
 function startNow() {
-  window.location.href = "menu-options.html"; // هنا سينتقل إلى صفحة الخيارات الرئيسية
+  // سيتم تغيير الرابط بناءً على اللغة المختارة في الزر
 }
 </script>
 
