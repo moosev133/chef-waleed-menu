@@ -7,187 +7,657 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #f9f6f1;
-      color: #333;
+      font-family: 'Cairo', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0e6d2;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
     header {
-      background-color: #5A2D0C;
-      padding: 1.5rem;
+      background-color: #1a1a1a;
       text-align: center;
-      color: #fff;
-      font-size: 2rem;
-      font-weight: bold;
+      padding: 2rem;
+    }
+    header img {
+      width: 150px;
+      height: auto;
     }
     main {
       flex: 1;
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    section {
+    .menu-section {
+      width: 100%;
+      max-width: 1000px;
       margin-bottom: 3rem;
     }
-    h2 {
-      border-bottom: 2px solid #cfa968;
+    .menu-section h2 {
+      color: #d4af37;
+      border-bottom: 2px solid #d4af37;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #5A2D0C;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #fff;
-      margin: 0.5rem 0;
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
       padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      transition: 0.3s;
+    }
+    .card:hover {
+      background-color: #292929;
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      background-color: #333;
+      margin-left: 1rem;
+      object-fit: cover;
+    }
+    .card-content {
+      flex-grow: 1;
+    }
+    .card-content h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+    .card-content p {
+      margin: 0;
+      font-size: 1rem;
+      color: #f0e6d2;
+    }
+    .price {
       font-size: 1.1rem;
+      color: #ffd700;
+      font-weight: bold;
+      margin-right: 1rem;
     }
     footer {
-      background-color: #5A2D0C;
-      color: #fff;
+      background-color: #1a1a1a;
       text-align: center;
-      padding: 1rem;
-      font-size: 1rem;
+      padding: 1.5rem;
     }
     footer a {
-      color: #ffd700;
-      margin: 0 10px;
+      background-color: #d4af37;
+      color: #0d0d0d;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s;
     }
     footer a:hover {
-      text-decoration: underline;
+      background-color: #ffd700;
     }
   </style>
 </head>
 <body>
 
 <header>
-  مرحباً بكم في مطعم الشيف وليد، نتمنى لكم وجبة شهية!
+  <img src="https://via.placeholder.com/150x100.png?text=Chef+Waleed+Logo" alt="Chef Waleed Logo">
 </header>
 
 <main>
 
-<section id="salads">
+<section class="menu-section">
   <h2>السلطات</h2>
-  <ul>
-    <li>سلطة دجاج - ₪60</li>
-    <li>سلطة عربية كبيرة - ₪30</li>
-    <li>سلطة يونانية - ₪45</li>
-    <li>سلطة حلومي - ₪65</li>
-    <li>فتوش كبيرة - ₪55</li>
-    <li>سلطة فيليه - ₪89</li>
-    <li>سلطة تبولة الشيف - ₪47</li>
-    <li>تشكيلة سلطات للفرد - ₪45</li>
-    <li>سلطة توست - ₪60</li>
-    <li>تبولة كبيرة - ₪45</li>
-    <li>حمص - ₪18</li>
-  </ul>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سلطة دجاج</h3>
+      <p>شرائح دجاج مشوي مع خضار طازجة.</p>
+    </div>
+    <div class="price">₪60</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سلطة عربية كبيرة</h3>
+      <p>خضار مشكّلة مع زيت زيتون وليمون.</p>
+    </div>
+    <div class="price">₪30</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سلطة يونانية</h3>
+      <p>جبنة فيتا وزيتون وخضار طازجة.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سلطة حلومي</h3>
+      <p>جبنة حلومي مشوية مع خضار.</p>
+    </div>
+    <div class="price">₪65</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>فتوش كبير</h3>
+      <p>خبز محمص مع خضار وسماق.</p>
+    </div>
+    <div class="price">₪55</div>
+  </div>
+
 </section>
 
-<section id="main-courses">
+<section class="menu-section">
   <h2>الوجبات الرئيسية</h2>
-  <ul>
-    <li>كلماري مقلي/مطبخ - ₪80</li>
-    <li>صدر دجاج - ₪75</li>
-    <li>بلاطة أسماك زوجية - ₪210</li>
-    <li>دينيس مقلي/مشوي - ₪95</li>
-    <li>بلاطة لحوم زوجية - ₪280</li>
-    <li>أنتركوت واجيو - ₪180</li>
-    <li>فيليه - ₪120</li>
-    <li>قريدس مقلي/مطبخ - ₪90</li>
-    <li>سلمون - ₪95</li>
-  </ul>
-</section>
 
-<section id="appetizers">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>كلماري مقلي/مطبخ</h3>
+      <p>كلماري طازج مقلي أو مشوي حسب الطلب.</p>
+    </div>
+    <div class="price">₪80</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>صدر دجاج</h3>
+      <p>صدر دجاج متبل ومشوي على الفحم.</p>
+    </div>
+    <div class="price">₪75</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>بلاطة أسماك زوجية</h3>
+      <p>تشكيلة من أفضل أنواع الأسماك الطازجة.</p>
+    </div>
+    <div class="price">₪210</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>دينيس مقلي/مشوي</h3>
+      <p>سمك دينيس مشوي أو مقلي مع صوص ليمون.</p>
+    </div>
+    <div class="price">₪95</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>بلاطة لحوم زوجية</h3>
+      <p>مزيج من أجود اللحوم المشوية.</p>
+    </div>
+    <div class="price">₪280</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>أنتركوت واجيو</h3>
+      <p>لحم أنتركوت واغيو الفاخر مشوي بإتقان.</p>
+    </div>
+    <div class="price">₪180</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>فيليه</h3>
+      <p>ستيك فيليه مشوي مع خضار جانبية.</p>
+    </div>
+    <div class="price">₪120</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>قريدس مقلي/مطبخ</h3>
+      <p>جمبري مقلي أو مشوي بتتبيلة خاصة.</p>
+    </div>
+    <div class="price">₪90</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سلمون</h3>
+      <p>سمك سلمون مشوي أو مقلي مع صوص الأعشاب.</p>
+    </div>
+    <div class="price">₪95</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>المقبلات</h2>
-  <ul>
-    <li>كبة (حبة) - ₪7</li>
-    <li>معجنات - ₪33</li>
-    <li>أرنتشيني - ₪40</li>
-    <li>هوم فرايز - ₪30</li>
-    <li>كرباتشيو فيليه - ₪52</li>
-    <li>باذنجان مع طحينة - ₪35</li>
-    <li>بلاطة مقبلات - ₪50</li>
-    <li>ميني عرايس - ₪40</li>
-    <li>شيبس - ₪17</li>
-    <li>فقع محشي بالجبنة - ₪50</li>
-    <li>مقبلات 4 أنواع - ₪100</li>
-    <li>جبنة مقلية - ₪33</li>
-  </ul>
-</section>
 
-<section id="drinks">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>كبة (حبة)</h3>
+      <p>كبة مقلية محشوة باللحم والصنوبر.</p>
+    </div>
+    <div class="price">₪7</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>معجنات</h3>
+      <p>تشكيلة من المعجنات الطازجة.</p>
+    </div>
+    <div class="price">₪33</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>أرنتشيني</h3>
+      <p>كرات أرز إيطالية محشوة بالجبنة.</p>
+    </div>
+    <div class="price">₪40</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>هوم فرايز</h3>
+      <p>بطاطا مقلية منزلية الصنع.</p>
+    </div>
+    <div class="price">₪30</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>كرباتشيو فيليه</h3>
+      <p>شرائح رقيقة من فيليه اللحم مع صوص خاص.</p>
+    </div>
+    <div class="price">₪52</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>باذنجان مع طحينة</h3>
+      <p>باذنجان مشوي مع صلصة طحينة لذيذة.</p>
+    </div>
+    <div class="price">₪35</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>بلاطة مقبلات</h3>
+      <p>مزيج مختار من المقبلات الشهية.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ميني عرايس</h3>
+      <p>خبز صغير محشو بلحم مشوي.</p>
+    </div>
+    <div class="price">₪40</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>شيبس</h3>
+      <p>بطاطا مقرمشة طازجة.</p>
+    </div>
+    <div class="price">₪17</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>فقع محشي بالجبنة</h3>
+      <p>فطر محشي بالجبنة ومخبوز.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>مقبلات 4 أنواع</h3>
+      <p>تشكيلة ٤ أنواع مختلفة من المقبلات.</p>
+    </div>
+    <div class="price">₪100</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>جبنة مقلية</h3>
+      <p>قطع جبنة ذهبية مقرمشة.</p>
+    </div>
+    <div class="price">₪33</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>المشروبات الباردة</h2>
-  <ul>
-    <li>ميلك شيك فانيلا - ₪27</li>
-    <li>ميلك شيك أوريو - ₪27</li>
-    <li>ميلك شيك توت - ₪27</li>
-    <li>ميلك شيك شوكولاتة - ₪27</li>
-    <li>إكس إل (مشروب طاقة) - ₪13</li>
-    <li>موهيتو - ₪30</li>
-    <li>صودا - ₪12</li>
-    <li>ماء - ₪17</li>
-    <li>فانتا - ₪13</li>
-    <li>عصير عنب - ₪13</li>
-    <li>كولا زيرو - ₪13</li>
-    <li>سبرايت - ₪13</li>
-    <li>كولا - ₪13</li>
-  </ul>
-</section>
 
-<section id="juices">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ميلك شيك فانيلا</h3>
+      <p>ميلك شيك بطعم الفانيلا الكلاسيكي.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ميلك شيك أوريو</h3>
+      <p>ميلك شيك غني ببسكويت أوريو الشهير.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ميلك شيك فراولة</h3>
+      <p>ميلك شيك بطعم الفراولة الطازجة.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ميلك شيك شوكولاتة</h3>
+      <p>ميلك شيك غني بنكهة الشوكولاتة.</p>
+    </div>
+    <div class="price">₪27</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>مشروب طاقة XL</h3>
+      <p>مشروب طاقة منعش XL.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>موهيتو</h3>
+      <p>مشروب منعش بنكهة الليمون والنعناع.</p>
+    </div>
+    <div class="price">₪30</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>صودا</h3>
+      <p>مياه غازية منعشة.</p>
+    </div>
+    <div class="price">₪12</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ماء</h3>
+      <p>مياه معدنية طبيعية.</p>
+    </div>
+    <div class="price">₪17</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>فانتا</h3>
+      <p>مشروب فوار بنكهة البرتقال.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>عصير عنب</h3>
+      <p>عصير عنب طبيعي منعش.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>كوكا كولا زيرو</h3>
+      <p>كوكا كولا بدون سكر.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سبرايت</h3>
+      <p>مشروب غازي منعش بنكهة الليمون.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>كوكا كولا</h3>
+      <p>مشروب الكولا الكلاسيكي.</p>
+    </div>
+    <div class="price">₪13</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>العصائر الطبيعية</h2>
-  <ul>
-    <li>عصير جزر - ₪20</li>
-    <li>عصير برتقال وجزر - ₪20</li>
-    <li>عصير برتقال - ₪20</li>
-    <li>شيك فواكه - ₪25</li>
-    <li>جروس - ₪25</li>
-    <li>ليمونادا - ₪20</li>
-  </ul>
-</section>
 
-<section id="desserts">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>عصير جزر</h3>
+      <p>عصير جزر طازج ومغذي.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>عصير برتقال وجزر</h3>
+      <p>خليط منعش من البرتقال والجزر الطازج.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>عصير برتقال</h3>
+      <p>عصير برتقال طبيعي وطازج.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سموذي فواكه</h3>
+      <p>مزيج فواكه طازجة في عصير سموذي لذيذ.</p>
+    </div>
+    <div class="price">₪25</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>جروس (عصير مثلج)</h3>
+      <p>عصير بارد مثلج بنكهات متنوعة.</p>
+    </div>
+    <div class="price">₪25</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>ليمونادة</h3>
+      <p>مشروب ليمون طازج ومنعش.</p>
+    </div>
+    <div class="price">₪20</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>الحلويات</h2>
-  <ul>
-    <li>كعكة الجبنة - ₪40</li>
-    <li>كعكة ساخنة - ₪45</li>
-    <li>سنكرز - ₪45</li>
-    <li>سان سبستيان - ₪45</li>
-    <li>سَفلي - ₪45</li>
-    <li>سوشي أوريو - ₪45</li>
-  </ul>
-</section>
 
-<section id="arageel">
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>تشيز كيك</h3>
+      <p>كيكة الجبن الكلاسيكية بطعم فاخر.</p>
+    </div>
+    <div class="price">₪40</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>كيك ساخن</h3>
+      <p>كيك دافئ غني بالشوكولاتة الذائبة.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سنكرس</h3>
+      <p>كيكة بطعم شوكولاتة سنكرس الفاخر.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سان سيباستيان</h3>
+      <p>تشيز كيك محروق فاخر.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سوفليه</h3>
+      <p>كيكة شوكولاتة ساخنة محشوة بالشوكولاتة السائلة.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>سوشي أوريو</h3>
+      <p>لفائف أوريو مغطاة بالشوكولاتة.</p>
+    </div>
+    <div class="price">₪45</div>
+  </div>
+
+</section>
+<section class="menu-section">
   <h2>الأراجيل</h2>
-  <ul>
-    <li>لون نعنع - ₪50</li>
-    <li>بلو بيري - ₪50</li>
-    <li>شامي - ₪50</li>
-    <li>تفاحتين - ₪50</li>
-    <li>تفاحة - ₪50</li>
-    <li>لوڤ66 - ₪50</li>
-  </ul>
-</section>
 
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>نعناع</h3>
+      <p>أرجيلة بنكهة النعناع المنعش.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>توت</h3>
+      <p>أرجيلة بنكهة التوت الفاخر.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>شامي</h3>
+      <p>نكهة شامي تقليدية أصيلة.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>دبل تفاح</h3>
+      <p>أرجيلة مزدوجة التفاح الأحمر والأخضر.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>تفاح</h3>
+      <p>نكهة تفاح منعشة وخفيفة.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+  <div class="card">
+    <img src="#">
+    <div class="card-content">
+      <h3>Love66</h3>
+      <p>نكهة مشهورة بمزيج الفواكه الاستوائية.</p>
+    </div>
+    <div class="price">₪50</div>
+  </div>
+
+</section>
 </main>
 
 <footer>
-  <p>لتغيير اللغة: 
-    <a href="menu-he.html">עברית</a> | 
-    <a href="menu-en.html">English</a>
-  </p>
+  <a href="index.html">العودة إلى الصفحة الرئيسية</a>
 </footer>
 
 </body>
