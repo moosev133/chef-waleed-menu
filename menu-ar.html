@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قائمة الطعام - شيف وليد</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f9f6f1;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #5A2D0C;
+      padding: 1.5rem;
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #cfa968;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #5A2D0C;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #fff;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #5A2D0C;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    footer a {
+      color: #ffd700;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  مرحباً بكم في مطعم الشيف وليد، نتمنى لكم وجبة شهية!
+</header>
+
+<main>
+
+<section id="salads">
+  <h2>السلطات</h2>
+  <ul>
+    <li>سلطة دجاج - ₪60</li>
+    <li>سلطة عربية كبيرة - ₪30</li>
+    <li>سلطة يونانية - ₪45</li>
+    <li>سلطة حلومي - ₪65</li>
+    <li>فتوش كبيرة - ₪55</li>
+    <li>سلطة فيليه - ₪89</li>
+    <li>سلطة تبولة الشيف - ₪47</li>
+    <li>تشكيلة سلطات للفرد - ₪45</li>
+    <li>سلطة توست - ₪60</li>
+    <li>تبولة كبيرة - ₪45</li>
+    <li>حمص - ₪18</li>
+  </ul>
+</section>
+
+<section id="main-courses">
+  <h2>الوجبات الرئيسية</h2>
+  <ul>
+    <li>كلماري مقلي/مطبخ - ₪80</li>
+    <li>صدر دجاج - ₪75</li>
+    <li>بلاطة أسماك زوجية - ₪210</li>
+    <li>دينيس مقلي/مشوي - ₪95</li>
+    <li>بلاطة لحوم زوجية - ₪280</li>
+    <li>أنتركوت واجيو - ₪180</li>
+    <li>فيليه - ₪120</li>
+    <li>قريدس مقلي/مطبخ - ₪90</li>
+    <li>سلمون - ₪95</li>
+  </ul>
+</section>
+
+<section id="appetizers">
+  <h2>المقبلات</h2>
+  <ul>
+    <li>كبة (حبة) - ₪7</li>
+    <li>معجنات - ₪33</li>
+    <li>أرنتشيني - ₪40</li>
+    <li>هوم فرايز - ₪30</li>
+    <li>كرباتشيو فيليه - ₪52</li>
+    <li>باذنجان مع طحينة - ₪35</li>
+    <li>بلاطة مقبلات - ₪50</li>
+    <li>ميني عرايس - ₪40</li>
+    <li>شيبس - ₪17</li>
+    <li>فقع محشي بالجبنة - ₪50</li>
+    <li>مقبلات 4 أنواع - ₪100</li>
+    <li>جبنة مقلية - ₪33</li>
+  </ul>
+</section>
+
+<section id="drinks">
+  <h2>المشروبات الباردة</h2>
+  <ul>
+    <li>ميلك شيك فانيلا - ₪27</li>
+    <li>ميلك شيك أوريو - ₪27</li>
+    <li>ميلك شيك توت - ₪27</li>
+    <li>ميلك شيك شوكولاتة - ₪27</li>
+    <li>إكس إل (مشروب طاقة) - ₪13</li>
+    <li>موهيتو - ₪30</li>
+    <li>صودا - ₪12</li>
+    <li>ماء - ₪17</li>
+    <li>فانتا - ₪13</li>
+    <li>عصير عنب - ₪13</li>
+    <li>كولا زيرو - ₪13</li>
+    <li>سبرايت - ₪13</li>
+    <li>كولا - ₪13</li>
+  </ul>
+</section>
+
+<section id="juices">
+  <h2>العصائر الطبيعية</h2>
+  <ul>
+    <li>عصير جزر - ₪20</li>
+    <li>عصير برتقال وجزر - ₪20</li>
+    <li>عصير برتقال - ₪20</li>
+    <li>شيك فواكه - ₪25</li>
+    <li>جروس - ₪25</li>
+    <li>ليمونادا - ₪20</li>
+  </ul>
+</section>
+
+<section id="desserts">
+  <h2>الحلويات</h2>
+  <ul>
+    <li>كعكة الجبنة - ₪40</li>
+    <li>كعكة ساخنة - ₪45</li>
+    <li>سنكرز - ₪45</li>
+    <li>سان سبستيان - ₪45</li>
+    <li>سَفلي - ₪45</li>
+    <li>سوشي أوريو - ₪45</li>
+  </ul>
+</section>
+
+<section id="arageel">
+  <h2>الأراجيل</h2>
+  <ul>
+    <li>لون نعنع - ₪50</li>
+    <li>بلو بيري - ₪50</li>
+    <li>شامي - ₪50</li>
+    <li>تفاحتين - ₪50</li>
+    <li>تفاحة - ₪50</li>
+    <li>لوڤ66 - ₪50</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>لتغيير اللغة: 
+    <a href="menu-he.html">עברית</a> | 
+    <a href="menu-en.html">English</a>
+  </p>
+</footer>
+
+</body>
+</html>
