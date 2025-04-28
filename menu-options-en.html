@@ -16,30 +16,44 @@
       text-align: center;
     }
     header img {
-      width: 180px;
+      width: 200px;
       height: auto;
-      margin-bottom: 1rem;
+      margin: 2rem 0;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: #d4af37;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
     .menu-option {
       margin: 2rem 0;
-    }
-    .menu-option a {
-      background-color: #1a1a1a;
-      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #292929;
       border-radius: 10px;
-      color: #f0e6d2;
-      text-decoration: none;
-      font-size: 1.5rem;
-      display: block;
+      padding: 1rem;
+      width: 90%;
+      max-width: 1000px;
       transition: background-color 0.3s;
     }
-    .menu-option a:hover {
+    .menu-option:hover {
       background-color: #d4af37;
+    }
+    .menu-option img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      margin-right: 1rem;
+      object-fit: cover;
+    }
+    .menu-option a {
+      font-size: 1.8rem;
+      color: #f0e6d2;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
     }
     footer {
       margin-top: auto;
@@ -49,10 +63,11 @@
     footer a {
       background-color: #d4af37;
       color: #0d0d0d;
-      padding: 0.8rem 1.5rem;
+      padding: 1rem 2rem;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
       transition: background-color 0.3s;
     }
     footer a:hover {
@@ -63,38 +78,44 @@
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
+  <img src="https://via.placeholder.com/200x120.png?text=Logo" alt="Restaurant Logo">
 </header>
 
 <h1>Menu</h1>
 
+<!-- Appetizers -->
 <div class="menu-option">
-  <a href="salads-en.html">Salads</a>
-</div>
-
-<div class="menu-option">
-  <a href="main-dishes-en.html">Main Dishes</a>
-</div>
-
-<div class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Appetizers" alt="Appetizers">
   <a href="appetizers-en.html">Appetizers</a>
 </div>
 
-
-
+<!-- Main Dishes -->
 <div class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="Main Dishes">
+  <a href="main-dishes-en.html">Main Dishes</a>
+</div>
+
+<!-- Hookahs -->
+<div class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Hookahs" alt="Hookahs">
   <a href="hookahs-en.html">Hookahs</a>
 </div>
 
+<!-- Drinks -->
 <div class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Drinks" alt="Drinks">
   <a href="drinks-en.html">Drinks</a>
 </div>
 
+<!-- Juices -->
 <div class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Juices" alt="Juices">
   <a href="juices-en.html">Juices</a>
 </div>
 
+<!-- Desserts -->
 <div class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Desserts" alt="Desserts">
   <a href="desserts-en.html">Desserts</a>
 </div>
 
