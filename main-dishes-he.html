@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מנות עיקריות - מסעדת שף וליד</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מנות עיקריות - שף וליד</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
       color: #f0e6d2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
       text-align: center;
     }
     header img {
       width: 180px;
-      height: auto;
-      margin: 2rem 0;
+      margin: 2rem auto;
+      display: block;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 2.5rem;
       color: #d4af37;
+      margin-bottom: 2rem;
     }
     .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       max-width: 1000px;
-      padding-bottom: 2rem;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
     }
     .item-card {
       background-color: #1a1a1a;
@@ -40,34 +36,35 @@
       border-radius: 10px;
       padding: 1rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: row-reverse;
       align-items: center;
-      transition: background-color 0.3s;
-    }
-    .item-card:hover {
-      background-color: #292929;
+      gap: 1rem;
+      text-align: right;
     }
     .item-card img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 1rem;
-      background-color: #333;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+    .item-card img:hover {
+      transform: scale(1.6);
+      z-index: 2;
     }
     .item-card h2 {
-      font-size: 1.2rem;
+      margin: 0;
+      font-size: 1.3rem;
       color: #ffd700;
-      margin: 0.5rem 0;
     }
     .item-card p {
-      font-size: 1rem;
       margin: 0.5rem 0;
-      color: #f0e6d2;
+      font-size: 1rem;
     }
-    .item-card .price {
-      font-weight: bold;
+    .price {
       color: #ffd700;
+      font-weight: bold;
       margin-top: 0.5rem;
     }
     footer {
@@ -91,45 +88,276 @@
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
+  <img src="res-logo2.png" alt="לוגו המסעדה">
 </header>
 
 <h1>מנות עיקריות</h1>
 
 <div class="menu-items">
-
-  <div class="item-card">
-    <img src="#" alt="קלאמרי">
-    <h2>קלאמרי</h2>
-    <p>קלאמרי פריזאי או צלוי לפי בחירה.</p>
-    <div class="price">₪80</div>
+    <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מיקס פירות ים (מטוגן/מבושל)" />
+    <div>
+      <h2>מיקס פירות ים (מטוגן/מבושל)</h2>
+      <p>מגוון פירות ים מטוגנים או מבושלים לפי בחירה.</p>
+      <div class="price">₪95</div>
+    </div>
   </div>
 
   <div class="item-card">
-    <img src="#" alt="חזה עוף">
-    <h2>חזה עוף</h2>
-    <p>חזה עוף מתובל וצלוי.</p>
-    <div class="price">₪75</div>
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="עראיס" />
+    <div>
+      <h2>עראיס</h2>
+      <p>פיתה ממולאת בבשר מתובל וצלוי.</p>
+      <div class="price">₪70</div>
+    </div>
   </div>
 
   <div class="item-card">
-    <img src="#" alt="מנת דגים כפולה">
-    <h2>מנת דגים כפולה</h2>
-    <p>מבחר דגים צלויים ומטוגנים.</p>
-    <div class="price">₪210</div>
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קדירת פירות ים/עוף" />
+    <div>
+      <h2>קדירת פירות ים/עוף</h2>
+      <p>תבשיל חם בקדרה עם פירות ים או עוף לפי בחירה.</p>
+      <div class="price">₪90</div>
+    </div>
   </div>
 
   <div class="item-card">
-    <img src="#" alt="דג דניס צלוי">
-    <h2>דג דניס צלוי</h2>
-    <p>דג דניס טרי עם רוטב לימון.</p>
-    <div class="price">₪95</div>
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="טי-בון אנגוס" />
+    <div>
+      <h2>טי-בון אנגוס</h2>
+      <p>סטייק טי-בון אנגוס מובחר.</p>
+      <div class="price">₪170</div>
+    </div>
   </div>
 
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סטרוגנוף עגל" />
+    <div>
+      <h2>סטרוגנוף עגל</h2>
+      <p>נתחי עגל ברוטב שמנת ופטריות.</p>
+      <div class="price">₪95</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קדירת בשר" />
+    <div>
+      <h2>קדירת בשר</h2>
+      <p>בשר מתבשל באיטיות עם ירקות בקדרה.</p>
+      <div class="price">₪110</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="שניצלונים מבושלים" />
+    <div>
+      <h2>שניצלונים מבושלים</h2>
+      <p>חתיכות שניצל מטוגנות ומבושלות.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מוקבנג עוף" />
+    <div>
+      <h2>מוקבנג עוף</h2>
+      <p>עוף מטוגן ברוטב אסייתי.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="חומוס עם בשר" />
+    <div>
+      <h2>חומוס עם בשר</h2>
+      <p>חומוס חם עם בשר מתובל.</p>
+      <div class="price">₪60</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="שניצלונים" />
+    <div>
+      <h2>שניצלונים</h2>
+      <p>שניצלים פריכים עם רוטב.</p>
+      <div class="price">₪60</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="שרימפס + קלמארי" />
+    <div>
+      <h2>שרימפס + קלמארי</h2>
+      <p>שרימפס וקלמארי צלויים או מטוגנים.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פילה" />
+    <div>
+      <h2>פילה</h2>
+      <p>נתחי פילה בגריל או בטיגון.</p>
+      <div class="price">₪120</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="אנטריקוט" />
+    <div>
+      <h2>אנטריקוט</h2>
+      <p>סטייק אנטריקוט טרי בגריל.</p>
+      <div class="price">₪120</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קורדון בלו" />
+    <div>
+      <h2>קורדון בלו</h2>
+      <p>עוף ממולא בגבינה ומורטדלה.</p>
+      <div class="price">₪85</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="שרימפס (מטוגן/מבושל)" />
+    <div>
+      <h2>שרימפס (מטוגן/מבושל)</h2>
+      <p>שרימפס טרי מטוגן או מבושל.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלמון" />
+    <div>
+      <h2>סלמון</h2>
+      <p>פילה סלמון צלוי.</p>
+      <div class="price">₪95</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קבב" />
+    <div>
+      <h2>קבב</h2>
+      <p>שיפודי קבב על האש.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="דניס מטוגן/צלוי" />
+    <div>
+      <h2>דניס מטוגן/צלוי</h2>
+      <p>דג דניס מוכן לבחירה.</p>
+      <div class="price">₪95</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מגש בשרים ל-4" />
+    <div>
+      <h2>מגש בשרים ל-4</h2>
+      <p>מנת בשרים חגיגית ל-4 אנשים.</p>
+      <div class="price">₪450</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מגש בשרים זוגי" />
+    <div>
+      <h2>מגש בשרים זוגי</h2>
+      <p>מגש בשרים זוגי על הגריל.</p>
+      <div class="price">₪280</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="צדפות" />
+    <div>
+      <h2>צדפות</h2>
+      <p>צדפות ברוטב שמנת.</p>
+      <div class="price">₪75</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="אנטריקוט ווגיו" />
+    <div>
+      <h2>אנטריקוט ווגיו</h2>
+      <p>סטייק ווגיו איכותי צלוי.</p>
+      <div class="price">₪180</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מוקבנג פילה" />
+    <div>
+      <h2>מוקבנג פילה</h2>
+      <p>נתח פילה ברוטב אסייתי.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קלמארי (מטוגן/מבושל)" />
+    <div>
+      <h2>קלמארי (מטוגן/מבושל)</h2>
+      <p>קלמארי מבושל או מטוגן בטעם מיוחד.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="בריסקט" />
+    <div>
+      <h2>בריסקט</h2>
+      <p>בשר בקר רך עם ירקות.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מגש דגים ל-4" />
+    <div>
+      <h2>מגש דגים ל-4</h2>
+      <p>מגש דגים מגוון ל-4.</p>
+      <div class="price">₪380</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="חזה עוף" />
+    <div>
+      <h2>חזה עוף</h2>
+      <p>חזה עוף מתובל על הגריל.</p>
+      <div class="price">₪75</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מגש דגים זוגי" />
+    <div>
+      <h2>מגש דגים זוגי</h2>
+      <p>מגש דגים מפואר לזוג.</p>
+      <div class="price">₪210</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="לחמעג'ון" />
+    <div>
+      <h2>לחמעג'ון</h2>
+      <p>בצק ממולא בבשר צלוי.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+
+  <!-- 🟨 Paste the Hebrew dish cards here (from Part 1, Part 2, Part 3) -->
 </div>
 
 <footer>
-  <a href="menu-options-he.html">חזרה לתפריט הראשי</a>
+  <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
 </footer>
 
 </body>
