@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مطعم شيف وليد</title>
   <style>
+  .luxury-box {
+  background-color: rgba(0, 0, 0, 0.55); /* dark semi-transparent background */
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  border: 1px solid #d4af37; /* optional golden border */
+  }
+
+.luxury-box h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #d4af37;
+  }
+
+.luxury-box p {
+  font-size: 1.2rem;
+  color: #f0e6d2;
+  margin-top: 1rem;
+  }
+
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
@@ -74,9 +96,11 @@
   <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
 </header>
 
-<h1 id="restaurant-name">مطعم شيف وليد</h1>
+<div class="luxury-box">
+  <h1 id="restaurant-name">مطعم شيف وليد</h1>
+  <p id="welcome-message">أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!</p>
+</div>
 
-<p id="welcome-message">أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!</p>
 
 <button class="start-btn" onclick="startNow()">ابدأ الآن</button>
 
