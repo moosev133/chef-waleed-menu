@@ -12,16 +12,19 @@
       color: #f0e6d2;
       text-align: center;
     }
+
     header img {
       width: 180px;
       margin: 2rem auto;
       display: block;
     }
+
     h1 {
       font-size: 2.5rem;
       color: #d4af37;
       margin-bottom: 2rem;
     }
+
     .menu-items {
       display: flex;
       flex-direction: column;
@@ -30,30 +33,54 @@
       margin: 0 auto 2rem;
       padding: 0 1rem;
     }
+
     .item-card {
       background-color: #1a1a1a;
       border: 1px solid #d4af37;
       border-radius: 10px;
       padding: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 1rem;
       text-align: right;
     }
+
+    .item-card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+
+    .item-card img:hover {
+      transform: scale(1.6);
+      z-index: 2;
+    }
+
     .item-card h2 {
-      margin: 0 0 0.5rem;
+      margin: 0;
       font-size: 1.3rem;
       color: #ffd700;
     }
+
     .item-card p {
       margin: 0.5rem 0;
       font-size: 1rem;
     }
+
     .price {
       color: #ffd700;
       font-weight: bold;
       margin-top: 0.5rem;
     }
+
     footer {
       margin: 2rem 0;
     }
+
     footer a {
       background-color: #d4af37;
       color: #0d0d0d;
@@ -64,6 +91,7 @@
       font-size: 1rem;
       transition: background-color 0.3s;
     }
+
     footer a:hover {
       background-color: #ffd700;
     }
@@ -78,37 +106,277 @@
 <h1>الوجبات الرئيسية</h1>
 
 <div class="menu-items">
-  <!-- Begin Arabic dishes -->
-  <div class="item-card"><h2>ميكس فواكه بحر مقلي/مطبوخ</h2><p>مزيج من المأكولات البحرية المقلية أو المطبوخة حسب الاختيار.</p><div class="price">₪95</div></div>
-  <div class="item-card"><h2>عرايس</h2><p>خبز محشي باللحم المشوي مع التوابل.</p><div class="price">₪70</div></div>
-  <div class="item-card"><h2>فخاره فواكه بحر/دجاج</h2><p>طبق فخار ساخن مع فواكه بحر أو دجاج حسب الطلب.</p><div class="price">₪90</div></div>
-  <div class="item-card"><h2>تيبون انجوس</h2><p>شريحة لحم تيبون من لحم الأنجوس الممتاز.</p><div class="price">₪170</div></div>
-  <div class="item-card"><h2>سترجانوف عجل</h2><p>قطع لحم عجل مطهوة بكريمة الفطر.</p><div class="price">₪95</div></div>
-  <div class="item-card"><h2>فخاره لحم</h2><p>لحم مطهو ببطء في فخار مع خضار.</p><div class="price">₪110</div></div>
-  <div class="item-card"><h2>شننتسلونيم مطبوخ</h2><p>قطع شنيتسل مقلية ومطبوخة.</p><div class="price">₪65</div></div>
-  <div class="item-card"><h2>موكبانس دجاج</h2><p>دجاج مقلي بصلصة آسيوية.</p><div class="price">₪65</div></div>
-  <div class="item-card"><h2>حمص مع لحمه</h2><p>حمص بلحمة مطبوخة وتوابل.</p><div class="price">₪60</div></div>
-  <div class="item-card"><h2>شننتسلونيم</h2><p>شنيتسل مقرمش مع صوص جانبي.</p><div class="price">₪60</div></div>
-  <div class="item-card"><h2>قريدس + كلماري</h2><p>قريدس وكلماري مقلي أو مشوي.</p><div class="price">₪90</div></div>
-  <div class="item-card"><h2>فيليه</h2><p>شرائح فيليه مشوية أو مقلية.</p><div class="price">₪120</div></div>
-  <div class="item-card"><h2>انتريكوت</h2><p>ستيك انتريكوت طازج مشوي.</p><div class="price">₪120</div></div>
-  <div class="item-card"><h2>كوردن بلو</h2><p>دجاج محشي بالجبن والمرتديلا.</p><div class="price">₪85</div></div>
-  <div class="item-card"><h2>قريدس مقلي/مطبوخ</h2><p>قريدس طازج مقلي أو مطبوخ.</p><div class="price">₪90</div></div>
-  <div class="item-card"><h2>سلمون</h2><p>فيليه سلمون مشوي.</p><div class="price">₪95</div></div>
-  <div class="item-card"><h2>كباب</h2><p>أسياخ كباب مشوية.</p><div class="price">₪80</div></div>
-  <div class="item-card"><h2>دينس مقلي / مشوي</h2><p>سمك دنيس محضر حسب الاختيار.</p><div class="price">₪95</div></div>
-  <div class="item-card"><h2>بلاطه لحوم 4</h2><p>وجبة فاخرة لأربعة أشخاص من اللحوم.</p><div class="price">₪450</div></div>
-  <div class="item-card"><h2>بلاطه لحوم زوجية</h2><p>طبق لحوم مشوي لشخصين.</p><div class="price">₪280</div></div>
-  <div class="item-card"><h2>صدف</h2><p>محار مطبوخ في صوص كريمي.</p><div class="price">₪75</div></div>
-  <div class="item-card"><h2>انتريكوت واجيو</h2><p>ستيك واجيو الفاخر مشوي.</p><div class="price">₪180</div></div>
-  <div class="item-card"><h2>موكبانس فيلي</h2><p>فيليه لحم بصلصة آسيوية.</p><div class="price">₪90</div></div>
-  <div class="item-card"><h2>لفرنك مقلي/مشوي</h2><p>سمك لفرنك مقلي أو مشوي.</p><div class="price">₪90</div></div>
-  <div class="item-card"><h2>كلماري مقلي/مطبوخ</h2><p>كلماري محضر بطريقة مميزة.</p><div class="price">₪80</div></div>
-  <div class="item-card"><h2>برچيت</h2><p>لحم مطهو ببطء مع خضار.</p><div class="price">₪80</div></div>
-  <div class="item-card"><h2>بلاطه اسماك 4</h2><p>وجبة أسماك متنوعة لأربعة.</p><div class="price">₪380</div></div>
-  <div class="item-card"><h2>صدر دجاج</h2><p>صدر دجاج متبل ومشوي.</p><div class="price">₪75</div></div>
-  <div class="item-card"><h2>بلاطه اسماك زوجيه</h2><p>طبق أسماك فاخر لشخصين.</p><div class="price">₪210</div></div>
-  <div class="item-card"><h2>صفيحه لحم</h2><p>عجينة محشوة بلحم مشوي.</p><div class="price">₪65</div></div>
+    <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="ميكس فواكه بحر مقلي/مطبوخ" />
+    <div>
+      <h2>ميكس فواكه بحر مقلي/مطبوخ</h2>
+      <p>مزيج من المأكولات البحرية المقلية أو المطبوخة حسب الاختيار.</p>
+      <div class="price">₪95</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="عرايس" />
+    <div>
+      <h2>عرايس</h2>
+      <p>خبز محشي باللحم المشوي مع التوابل.</p>
+      <div class="price">₪70</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="فخاره فواكه بحر/دجاج" />
+    <div>
+      <h2>فخاره فواكه بحر/دجاج</h2>
+      <p>طبق فخار ساخن مع فواكه بحر أو دجاج حسب الطلب.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="تيبون انجوس" />
+    <div>
+      <h2>تيبون انجوس</h2>
+      <p>شريحة لحم تيبون من لحم الأنجوس الممتاز.</p>
+      <div class="price">₪170</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="سترجانوف عجل" />
+    <div>
+      <h2>سترجانوف عجل</h2>
+      <p>قطع لحم عجل مطهوة بكريمة الفطر.</p>
+      <div class="price">₪95</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="فخاره لحم" />
+    <div>
+      <h2>فخاره لحم</h2>
+      <p>لحم مطهو ببطء في فخار مع خضار.</p>
+      <div class="price">₪110</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="شننتسلونيم مطبوخ" />
+    <div>
+      <h2>شننتسلونيم مطبوخ</h2>
+      <p>قطع شنيتسل مقلية ومطبوخة.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="موكبانس دجاج" />
+    <div>
+      <h2>موكبانس دجاج</h2>
+      <p>دجاج مقلي بصلصة آسيوية.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="حمص مع لحمه" />
+    <div>
+      <h2>حمص مع لحمه</h2>
+      <p>حمص بلحمة مطبوخة وتوابل.</p>
+      <div class="price">₪60</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="شننتسلونيم" />
+    <div>
+      <h2>شننتسلونيم</h2>
+      <p>شنيتسل مقرمش مع صوص جانبي.</p>
+      <div class="price">₪60</div>
+    </div>
+  </div>
+    <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="صدف" />
+    <div>
+      <h2>صدف</h2>
+      <p>محار مطبوخ في صوص كريمي.</p>
+      <div class="price">₪75</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="انتريكوت واجيو" />
+    <div>
+      <h2>انتريكوت واجيو</h2>
+      <p>ستيك واجيو الفاخر مشوي.</p>
+      <div class="price">₪180</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="موكبانس فيلي" />
+    <div>
+      <h2>موكبانس فيلي</h2>
+      <p>فيليه لحم بصلصة آسيوية.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="لفرنك مقلي/مشوي" />
+    <div>
+      <h2>لفرنك مقلي/مشوي</h2>
+      <p>سمك لفرنك مقلي أو مشوي.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="كلماري مقلي/مطبوخ" />
+    <div>
+      <h2>كلماري مقلي/مطبوخ</h2>
+      <p>كلماري محضر بطريقة مميزة.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="برچيت" />
+    <div>
+      <h2>برچيت</h2>
+      <p>لحم مطهو ببطء مع خضار.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="بلاطه اسماك 4" />
+    <div>
+      <h2>بلاطه اسماك 4</h2>
+      <p>وجبة أسماك متنوعة لأربعة.</p>
+      <div class="price">₪380</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="صدر دجاج" />
+    <div>
+      <h2>صدر دجاج</h2>
+      <p>صدر دجاج متبل ومشوي.</p>
+      <div class="price">₪75</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="بلاطه اسماك زوجيه" />
+    <div>
+      <h2>بلاطه اسماك زوجيه</h2>
+      <p>طبق أسماك فاخر لشخصين.</p>
+      <div class="price">₪210</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="صفيحه لحم" />
+    <div>
+      <h2>صفيحه لحم</h2>
+      <p>عجينة محشوة بلحم مشوي.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+    <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="صدف" />
+    <div>
+      <h2>صدف</h2>
+      <p>محار مطبوخ في صوص كريمي.</p>
+      <div class="price">₪75</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="انتريكوت واجيو" />
+    <div>
+      <h2>انتريكوت واجيو</h2>
+      <p>ستيك واجيو الفاخر مشوي.</p>
+      <div class="price">₪180</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="موكبانس فيلي" />
+    <div>
+      <h2>موكبانس فيلي</h2>
+      <p>فيليه لحم بصلصة آسيوية.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="لفرنك مقلي/مشوي" />
+    <div>
+      <h2>لفرنك مقلي/مشوي</h2>
+      <p>سمك لفرنك مقلي أو مشوي.</p>
+      <div class="price">₪90</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="كلماري مقلي/مطبوخ" />
+    <div>
+      <h2>كلماري مقلي/مطبوخ</h2>
+      <p>كلماري محضر بطريقة مميزة.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="برچيت" />
+    <div>
+      <h2>برچيت</h2>
+      <p>لحم مطهو ببطء مع خضار.</p>
+      <div class="price">₪80</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="بلاطه اسماك 4" />
+    <div>
+      <h2>بلاطه اسماك 4</h2>
+      <p>وجبة أسماك متنوعة لأربعة.</p>
+      <div class="price">₪380</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="صدر دجاج" />
+    <div>
+      <h2>صدر دجاج</h2>
+      <p>صدر دجاج متبل ومشوي.</p>
+      <div class="price">₪75</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="بلاطه اسماك زوجيه" />
+    <div>
+      <h2>بلاطه اسماك زوجيه</h2>
+      <p>طبق أسماك فاخر لشخصين.</p>
+      <div class="price">₪210</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=صورة" alt="صفيحه لحم" />
+    <div>
+      <h2>صفيحه لحم</h2>
+      <p>عجينة محشوة بلحم مشوي.</p>
+      <div class="price">₪65</div>
+    </div>
+  </div>
+
+  <!-- All dish cards with image, description, and price go here -->
+  <!-- Use the generated HTML from previous output -->
+  <!-- If you'd like, I can deliver the full combined file -->
 </div>
 
 <footer>
