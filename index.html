@@ -5,34 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مطعم شيف وليد</title>
   <style>
-  .luxury-box {
-  background-color: rgba(0, 0, 0, 0.55); /* dark semi-transparent background */
-  padding: 2rem;
-  border-radius: 20px;
-  max-width: 600px;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-  border: 1px solid #d4af37; /* optional golden border */
-  }
-
-.luxury-box h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: #d4af37;
-  }
-
-.luxury-box p {
-  font-size: 1.2rem;
-  color: #f0e6d2;
-  margin-top: 1rem;
-  }
-
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
-      background-image: url('welcome-page2.jpg'); /* ضع رابط الصورة هنا */
-      background-size: cover; /* يجعل الصورة تملأ الصفحة بالكامل */
-      background-position: center; /* يركز الصورة في المنتصف */
+      background-image: url('welcome-page2.jpg'); /* your background image */
+      background-size: cover;
+      background-position: center;
       color: #f0e6d2;
       display: flex;
       flex-direction: column;
@@ -41,21 +19,35 @@
       min-height: 100vh;
       text-align: center;
     }
-    header img {
-      width: 180px;
+
+    .luxury-box {
+      background-color: rgba(0, 0, 0, 0.55);
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+      border: 1px solid #d4af37;
+    }
+
+    .luxury-box img {
+      width: 150px;
       height: auto;
       margin-bottom: 1rem;
     }
-    h1 {
+
+    .luxury-box h1 {
+      margin: 0;
       font-size: 2.5rem;
-      margin-bottom: 1rem;
       color: #d4af37;
     }
-    p {
+
+    .luxury-box p {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
       color: #f0e6d2;
+      margin-top: 1rem;
     }
+
     .start-btn {
       background-color: #d4af37;
       color: #0d0d0d;
@@ -68,13 +60,16 @@
       margin-bottom: 1.5rem;
       transition: background-color 0.3s;
     }
+
     .start-btn:hover {
       background-color: #ffd700;
     }
+
     .language-buttons {
       display: flex;
       gap: 1rem;
     }
+
     .language-buttons button {
       background-color: #333;
       color: #f0e6d2;
@@ -85,6 +80,7 @@
       font-size: 1rem;
       transition: background-color 0.3s;
     }
+
     .language-buttons button:hover {
       background-color: #444;
     }
@@ -92,70 +88,63 @@
 </head>
 <body>
 
-<header>
-  <img src="res-logo.jpg" alt="Restaurant Logo">
-</header>
+  <div class="luxury-box">
+    <img src="res-logo.jpg" alt="Restaurant Logo">
+    <h1 id="restaurant-name">مطعم شيف وليد</h1>
+    <p id="welcome-message">أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!</p>
+  </div>
 
-<div class="luxury-box">
-  <h1 id="restaurant-name">مطعم شيف وليد</h1>
-  <p id="welcome-message">أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!</p>
-</div>
+  <button class="start-btn" onclick="startNow()">ابدأ الآن</button>
 
+  <div class="language-buttons">
+    <button id="btn-ar" onclick="setLanguage('ar')">العربية</button>
+    <button id="btn-en" onclick="setLanguage('en')">English</button>
+    <button id="btn-he" onclick="setLanguage('he')">עברית</button>
+  </div>
 
-<button class="start-btn" onclick="startNow()">ابدأ الآن</button>
+  <script>
+    function setLanguage(lang) {
+      if (lang === 'ar') {
+        document.documentElement.lang = 'ar';
+        document.documentElement.dir = 'rtl';
+        document.getElementById('restaurant-name').innerText = 'مطعم شيف وليد';
+        document.getElementById('welcome-message').innerText = 'أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!';
+        document.querySelector('.start-btn').innerText = 'ابدأ الآن';
+        document.getElementById('btn-ar').style.display = 'none';
+        document.getElementById('btn-en').style.display = 'inline-block';
+        document.getElementById('btn-he').style.display = 'inline-block';
+      } else if (lang === 'en') {
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+        document.getElementById('restaurant-name').innerText = "Chef Waleed Restaurant";
+        document.getElementById('welcome-message').innerText = "Welcome to our restaurant, we hope you enjoy your experience!";
+        document.querySelector('.start-btn').innerText = 'Start Now';
+        document.getElementById('btn-ar').style.display = 'inline-block';
+        document.getElementById('btn-en').style.display = 'none';
+        document.getElementById('btn-he').style.display = 'inline-block';
+      } else if (lang === 'he') {
+        document.documentElement.lang = 'he';
+        document.documentElement.dir = 'rtl';
+        document.getElementById('restaurant-name').innerText = "מסעדת שף וליד";
+        document.getElementById('welcome-message').innerText = "ברוכים הבאים למסעדה שלנו, אנו מאחלים לכם חוויה מהנה!";
+        document.querySelector('.start-btn').innerText = 'התחל עכשיו';
+        document.getElementById('btn-ar').style.display = 'inline-block';
+        document.getElementById('btn-en').style.display = 'inline-block';
+        document.getElementById('btn-he').style.display = 'none';
+      }
+    }
 
-<div class="language-buttons">
-  <button id="btn-ar" onclick="setLanguage('ar')">العربية</button>
-  <button id="btn-en" onclick="setLanguage('en')">English</button>
-  <button id="btn-he" onclick="setLanguage('he')">עברית</button>
-</div>
-
-<script>
-function setLanguage(lang) {
-  if (lang === 'ar') {
-    document.documentElement.lang = 'ar';
-    document.documentElement.dir = 'rtl';
-    document.getElementById('restaurant-name').innerText = 'مطعم شيف وليد';
-    document.getElementById('welcome-message').innerText = 'أهلاً وسهلاً بكم في مطعمنا، نتمنى لكم تجربة ممتعة!';
-    document.querySelector('.start-btn').innerText = 'ابدأ الآن';
-    // Show only the English and Hebrew options
-    document.getElementById('btn-ar').style.display = 'none';
-    document.getElementById('btn-en').style.display = 'inline-block';
-    document.getElementById('btn-he').style.display = 'inline-block';
-  } else if (lang === 'en') {
-    document.documentElement.lang = 'en';
-    document.documentElement.dir = 'ltr';
-    document.getElementById('restaurant-name').innerText = "Chef Waleed Restaurant";
-    document.getElementById('welcome-message').innerText = "Welcome to our restaurant, we hope you enjoy your experience!";
-    document.querySelector('.start-btn').innerText = 'Start Now';
-    // Show only the Arabic and Hebrew options
-    document.getElementById('btn-ar').style.display = 'inline-block';
-    document.getElementById('btn-en').style.display = 'none';
-    document.getElementById('btn-he').style.display = 'inline-block';
-  } else if (lang === 'he') {
-    document.documentElement.lang = 'he';
-    document.documentElement.dir = 'rtl';
-    document.getElementById('restaurant-name').innerText = "מסעדת שף וליד";
-    document.getElementById('welcome-message').innerText = "ברוכים הבאים למסעדה שלנו, אנו מאחלים לכם חוויה מהנה!";
-    document.querySelector('.start-btn').innerText = 'התחל עכשיו';
-    // Show only the Arabic and English options
-    document.getElementById('btn-ar').style.display = 'inline-block';
-    document.getElementById('btn-en').style.display = 'inline-block';
-    document.getElementById('btn-he').style.display = 'none';
-  }
-}
-
-function startNow() {
-  // Redirect to the appropriate menu page based on the selected language
-  if (document.documentElement.lang === 'ar') {
-    window.location.href = "menu-options-ar.html"; // Arabic menu page
-  } else if (document.documentElement.lang === 'en') {
-    window.location.href = "menu-options-en.html"; // English menu page
-  } else if (document.documentElement.lang === 'he') {
-    window.location.href = "menu-options-he.html"; // Hebrew menu page
-  }
-}
-</script>
+    function startNow() {
+      const lang = document.documentElement.lang;
+      if (lang === 'ar') {
+        window.location.href = "menu-options-ar.html";
+      } else if (lang === 'en') {
+        window.location.href = "menu-options-en.html";
+      } else if (lang === 'he') {
+        window.location.href = "menu-options-he.html";
+      }
+    }
+  </script>
 
 </body>
 </html>
