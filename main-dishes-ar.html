@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>وجبات رئيسية - مطعم شيف وليد</title>
   <style>
     body {
@@ -10,64 +10,45 @@
       font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
       color: #f0e6d2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
       text-align: center;
     }
     header img {
       width: 180px;
-      height: auto;
-      margin: 2rem 0;
+      margin: 2rem auto;
+      display: block;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 2.5rem;
       color: #d4af37;
+      margin-bottom: 2rem;
     }
     .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       max-width: 1000px;
-      padding-bottom: 2rem;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
     }
     .item-card {
       background-color: #1a1a1a;
       border: 1px solid #d4af37;
       border-radius: 10px;
       padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: background-color 0.3s;
-    }
-    .item-card:hover {
-      background-color: #292929;
-    }
-    .item-card img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      background-color: #333;
+      text-align: right;
     }
     .item-card h2 {
-      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
       color: #ffd700;
-      margin: 0.5rem 0;
     }
     .item-card p {
-      font-size: 1rem;
       margin: 0.5rem 0;
-      color: #f0e6d2;
+      font-size: 1rem;
     }
-    .item-card .price {
-      font-weight: bold;
+    .price {
       color: #ffd700;
+      font-weight: bold;
       margin-top: 0.5rem;
     }
     footer {
@@ -91,46 +72,47 @@
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
+  <img src="res-logo2.png" alt="Restaurant Logo">
 </header>
 
-<h1>وجبات رئيسية</h1>
+<h1>الوجبات الرئيسية</h1>
 
 <div class="menu-items">
-
-  <div class="item-card">
-    <img src="#" alt="كالي مارى">
-    <h2>كالي مارى</h2>
-    <p>كالماري مقلي أو مشوي حسب الاختيار.</p>
-    <div class="price">₪80</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="صدر دجاج">
-    <h2>صدر دجاج</h2>
-    <p>صدر دجاج متبل ومشوي.</p>
-    <div class="price">₪75</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="صحن سمك مزدوج">
-    <h2>صحن سمك مزدوج</h2>
-    <p>اختيار من السمك المشوي والمقلي.</p>
-    <div class="price">₪210</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="سمك دنيس مشوي">
-    <h2>سمك دنيس مشوي</h2>
-    <p>سمك دنيس طازج مع صوص الليمون.</p>
-    <div class="price">₪95</div>
-  </div>
-
+  <!-- Begin Arabic dishes -->
+  <div class="item-card"><h2>ميكس فواكه بحر مقلي/مطبوخ</h2><p>مزيج من المأكولات البحرية المقلية أو المطبوخة حسب الاختيار.</p><div class="price">₪95</div></div>
+  <div class="item-card"><h2>عرايس</h2><p>خبز محشي باللحم المشوي مع التوابل.</p><div class="price">₪70</div></div>
+  <div class="item-card"><h2>فخاره فواكه بحر/دجاج</h2><p>طبق فخار ساخن مع فواكه بحر أو دجاج حسب الطلب.</p><div class="price">₪90</div></div>
+  <div class="item-card"><h2>تيبون انجوس</h2><p>شريحة لحم تيبون من لحم الأنجوس الممتاز.</p><div class="price">₪170</div></div>
+  <div class="item-card"><h2>سترجانوف عجل</h2><p>قطع لحم عجل مطهوة بكريمة الفطر.</p><div class="price">₪95</div></div>
+  <div class="item-card"><h2>فخاره لحم</h2><p>لحم مطهو ببطء في فخار مع خضار.</p><div class="price">₪110</div></div>
+  <div class="item-card"><h2>شننتسلونيم مطبوخ</h2><p>قطع شنيتسل مقلية ومطبوخة.</p><div class="price">₪65</div></div>
+  <div class="item-card"><h2>موكبانس دجاج</h2><p>دجاج مقلي بصلصة آسيوية.</p><div class="price">₪65</div></div>
+  <div class="item-card"><h2>حمص مع لحمه</h2><p>حمص بلحمة مطبوخة وتوابل.</p><div class="price">₪60</div></div>
+  <div class="item-card"><h2>شننتسلونيم</h2><p>شنيتسل مقرمش مع صوص جانبي.</p><div class="price">₪60</div></div>
+  <div class="item-card"><h2>قريدس + كلماري</h2><p>قريدس وكلماري مقلي أو مشوي.</p><div class="price">₪90</div></div>
+  <div class="item-card"><h2>فيليه</h2><p>شرائح فيليه مشوية أو مقلية.</p><div class="price">₪120</div></div>
+  <div class="item-card"><h2>انتريكوت</h2><p>ستيك انتريكوت طازج مشوي.</p><div class="price">₪120</div></div>
+  <div class="item-card"><h2>كوردن بلو</h2><p>دجاج محشي بالجبن والمرتديلا.</p><div class="price">₪85</div></div>
+  <div class="item-card"><h2>قريدس مقلي/مطبوخ</h2><p>قريدس طازج مقلي أو مطبوخ.</p><div class="price">₪90</div></div>
+  <div class="item-card"><h2>سلمون</h2><p>فيليه سلمون مشوي.</p><div class="price">₪95</div></div>
+  <div class="item-card"><h2>كباب</h2><p>أسياخ كباب مشوية.</p><div class="price">₪80</div></div>
+  <div class="item-card"><h2>دينس مقلي / مشوي</h2><p>سمك دنيس محضر حسب الاختيار.</p><div class="price">₪95</div></div>
+  <div class="item-card"><h2>بلاطه لحوم 4</h2><p>وجبة فاخرة لأربعة أشخاص من اللحوم.</p><div class="price">₪450</div></div>
+  <div class="item-card"><h2>بلاطه لحوم زوجية</h2><p>طبق لحوم مشوي لشخصين.</p><div class="price">₪280</div></div>
+  <div class="item-card"><h2>صدف</h2><p>محار مطبوخ في صوص كريمي.</p><div class="price">₪75</div></div>
+  <div class="item-card"><h2>انتريكوت واجيو</h2><p>ستيك واجيو الفاخر مشوي.</p><div class="price">₪180</div></div>
+  <div class="item-card"><h2>موكبانس فيلي</h2><p>فيليه لحم بصلصة آسيوية.</p><div class="price">₪90</div></div>
+  <div class="item-card"><h2>لفرنك مقلي/مشوي</h2><p>سمك لفرنك مقلي أو مشوي.</p><div class="price">₪90</div></div>
+  <div class="item-card"><h2>كلماري مقلي/مطبوخ</h2><p>كلماري محضر بطريقة مميزة.</p><div class="price">₪80</div></div>
+  <div class="item-card"><h2>برچيت</h2><p>لحم مطهو ببطء مع خضار.</p><div class="price">₪80</div></div>
+  <div class="item-card"><h2>بلاطه اسماك 4</h2><p>وجبة أسماك متنوعة لأربعة.</p><div class="price">₪380</div></div>
+  <div class="item-card"><h2>صدر دجاج</h2><p>صدر دجاج متبل ومشوي.</p><div class="price">₪75</div></div>
+  <div class="item-card"><h2>بلاطه اسماك زوجيه</h2><p>طبق أسماك فاخر لشخصين.</p><div class="price">₪210</div></div>
+  <div class="item-card"><h2>صفيحه لحم</h2><p>عجينة محشوة بلحم مشوي.</p><div class="price">₪65</div></div>
 </div>
 
 <footer>
   <a href="javascript:history.back()">العودة إلى الصفحة السابقة</a>
-
 </footer>
 
 </body>
