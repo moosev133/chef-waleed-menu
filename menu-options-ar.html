@@ -16,16 +16,19 @@
       min-height: 100vh;
       text-align: center;
     }
+
     header img {
       width: 200px;
       height: auto;
       margin: 2rem 0;
     }
+
     h1 {
       font-size: 3rem;
       color: #d4af37;
       margin-bottom: 1.5rem;
     }
+
     .menu-option {
       margin: 2rem 0;
       display: flex;
@@ -37,12 +40,15 @@
       width: 90%;
       max-width: 1000px;
       transition: background-color 0.3s, border 0.3s;
-      border: 2px solid #d4af37; /* Golden border */
+      border: 2px solid #d4af37;
+      text-decoration: none;
     }
+
     .menu-option:hover {
       background-color: #d4af37;
-      border: 2px solid #ffd700; /* Golden border on hover */
+      border: 2px solid #ffd700;
     }
+
     .menu-option img {
       width: 150px;
       height: 150px;
@@ -50,19 +56,19 @@
       margin-right: 1rem;
       object-fit: cover;
     }
-    .menu-option a {
+
+    .menu-option span {
       font-size: 1.8rem;
       color: #f0e6d2;
-      text-decoration: none;
       font-weight: bold;
-      display: flex;
-      align-items: center;
     }
+
     footer {
       margin-top: auto;
       padding: 1rem;
       background-color: #1a1a1a;
     }
+
     footer a {
       background-color: #d4af37;
       color: #0d0d0d;
@@ -73,6 +79,7 @@
       font-size: 1rem;
       transition: background-color 0.3s;
     }
+
     footer a:hover {
       background-color: #ffd700;
     }
@@ -86,50 +93,47 @@
 
 <h1>قائمة الطعام</h1>
 
-
-  <!-- الوجبات الرئيسية -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="سلطات">
-  <a href="main-dishes-ar.html">سلطات</a>
-</div>
-
+<!-- سلطات -->
+<a href="salads-ar.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Salads" alt="سلطات">
+  <span>سلطات</span>
+</a>
 
 <!-- الوجبات الرئيسية -->
-<div class="menu-option">
+<a href="main-dishes-ar.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="وجبات رئيسية">
-  <a href="main-dishes-ar.html">الوجبات الرئيسية</a>
-</div>
+  <span>الوجبات الرئيسية</span>
+</a>
 
 <!-- المقبلات -->
-<div class="menu-option">
+<a href="appetizers-ar.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Appetizers" alt="مقبلات">
-  <a href="appetizers-ar.html">المقبلات</a>
-</div>
-
+  <span>المقبلات</span>
+</a>
 
 <!-- الأراجيل -->
-<div class="menu-option">
+<a href="hookahs-ar.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Hookahs" alt="أراجيل">
-  <a href="hookahs-ar.html">الأراجيل</a>
-</div>
+  <span>الأراجيل</span>
+</a>
 
 <!-- المشروبات -->
-<div class="menu-option">
+<a href="drinks-ar.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Drinks" alt="مشروبات">
-  <a href="drinks-ar.html">المشروبات</a>
-</div>
+  <span>المشروبات</span>
+</a>
 
 <!-- العصائر -->
-<div class="menu-option">
+<a href="juices-ar.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Juices" alt="عصائر">
-  <a href="juices-ar.html">العصائر</a>
-</div>
+  <span>العصائر</span>
+</a>
 
 <!-- الحلويات -->
-<div class="menu-option">
+<a href="desserts-ar.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Desserts" alt="حلويات">
-  <a href="desserts-ar.html">الحلويات</a>
-</div>
+  <span>الحلويات</span>
+</a>
 
 <footer>
   <a href="index-ar.html">العودة إلى الصفحة الرئيسية</a>
