@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מבשלים - מסעדת שף וליד</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מתאבנים - מסעדת שף וליד</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
       color: #f0e6d2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
       text-align: center;
     }
     header img {
       width: 180px;
-      height: auto;
-      margin: 2rem 0;
+      margin: 2rem auto;
+      display: block;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 2.5rem;
       color: #d4af37;
+      margin-bottom: 2rem;
     }
     .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       max-width: 1000px;
-      padding-bottom: 2rem;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
     }
     .item-card {
       background-color: #1a1a1a;
@@ -40,34 +36,35 @@
       border-radius: 10px;
       padding: 1rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: row-reverse;
       align-items: center;
-      transition: background-color 0.3s;
-    }
-    .item-card:hover {
-      background-color: #292929;
+      gap: 1rem;
+      text-align: right;
     }
     .item-card img {
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 1rem;
-      background-color: #333;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+    .item-card img:hover {
+      transform: scale(1.6);
+      z-index: 2;
     }
     .item-card h2 {
-      font-size: 1.2rem;
+      margin: 0;
+      font-size: 1.3rem;
       color: #ffd700;
-      margin: 0.5rem 0;
     }
     .item-card p {
-      font-size: 1rem;
       margin: 0.5rem 0;
-      color: #f0e6d2;
+      font-size: 1rem;
     }
-    .item-card .price {
-      font-weight: bold;
+    .price {
       color: #ffd700;
+      font-weight: bold;
       margin-top: 0.5rem;
     }
     footer {
@@ -91,39 +88,125 @@
 <body>
 
 <header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
+  <img src="res-logo2.png" alt="לוגו המסעדה">
 </header>
 
-<h1>מבשלים</h1>
+<h1>מתאבנים</h1>
 
 <div class="menu-items">
 
   <div class="item-card">
-    <img src="#" alt="ממולאים">
-    <h2>ממולאים</h2>
-    <p>תערובת של מבשלים ערביים עם טחינה.</p>
-    <div class="price">₪40</div>
+    <img src="https://via.placeholder.com/120" alt="צ'יפס ביתי">
+    <div>
+      <h2>צ'יפס ביתי</h2>
+      <p>תפוחי אדמה מטוגנים בסגנון ביתי עם תיבול מיוחד.</p>
+      <div class="price">₪30</div>
+    </div>
   </div>
 
   <div class="item-card">
-    <img src="#" alt="מטבל">
-    <h2>מטבל</h2>
-    <p>סלט חציל טרי עם טחינה ושמן זית.</p>
-    <div class="price">₪30</div>
+    <img src="https://via.placeholder.com/120" alt="קובה (ליחידה)">
+    <div>
+      <h2>קובה (ליחידה)</h2>
+      <p>כדורי בורגול מטוגנים ממולאים בבשר מתובל.</p>
+      <div class="price">₪7</div>
+    </div>
   </div>
 
   <div class="item-card">
-    <img src="#" alt="חומוס">
-    <h2>חומוס</h2>
-    <p>חומוס עם שמן זית. </p>
-    <div class="price">₪25</div>
+    <img src="https://via.placeholder.com/120" alt="מאפים">
+    <div>
+      <h2>מאפים</h2>
+      <p>מגוון מאפים טריים במילויים שונים.</p>
+      <div class="price">₪33</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="קרפצ'יו פילה">
+    <div>
+      <h2>קרפצ'יו פילה</h2>
+      <p>פרוסות דקות של פילה בקר עם שמן זית ולימון.</p>
+      <div class="price">₪52</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="חציל עם טחינה">
+    <div>
+      <h2>חציל עם טחינה</h2>
+      <p>חציל קלוי מוגש עם טחינה ורוטב לימון.</p>
+      <div class="price">₪35</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="ארטישוק">
+    <div>
+      <h2>ארטישוק</h2>
+      <p>לבבות ארטישוק מוכנים בסגנון השף.</p>
+      <div class="price">₪40</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="פטריות ממולאות בגבינה">
+    <div>
+      <h2>פטריות ממולאות בגבינה</h2>
+      <p>פטריות טריות ממולאות בתערובת גבינות מותכות.</p>
+      <div class="price">₪50</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="מגש מתאבנים">
+    <div>
+      <h2>מגש מתאבנים</h2>
+      <p>מבחר מתאבנים מובחרים על מגש אחד.</p>
+      <div class="price">₪50</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="מיני ערייס">
+    <div>
+      <h2>מיני ערייס</h2>
+      <p>פיתות קטנות ממולאות בבשר מתובל וצלוי.</p>
+      <div class="price">₪40</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="קומבו מתאבנים (4)">
+    <div>
+      <h2>קומבו מתאבנים (4)</h2>
+      <p>ארבעה סוגי מתאבנים מוגשים יחד.</p>
+      <div class="price">₪100</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="גבינה מטוגנת">
+    <div>
+      <h2>גבינה מטוגנת</h2>
+      <p>חתיכות גבינה מטוגנות פריכות וחמות.</p>
+      <div class="price">₪33</div>
+    </div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120" alt="צ'יפס">
+    <div>
+      <h2>צ'יפס</h2>
+      <p>תפוחי אדמה מטוגנים פריכים ומומלחים.</p>
+      <div class="price">₪17</div>
+    </div>
   </div>
 
 </div>
 
 <footer>
   <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
-
 </footer>
 
 </body>
