@@ -12,21 +12,24 @@
       color: #f0e6d2;
       display: flex;
       flex-direction: column;
-      align-items: center; /* מרכז את התוכן אופקית */
-      justify-content: center; /* מרכז את התוכן אנכית */
+      align-items: center;
+      justify-content: center;
       min-height: 100vh;
       text-align: center;
     }
+
     header img {
       width: 200px;
       height: auto;
       margin: 2rem 0;
     }
+
     h1 {
       font-size: 3rem;
       color: #d4af37;
       margin-bottom: 1.5rem;
     }
+
     .menu-option {
       margin: 2rem 0;
       display: flex;
@@ -38,32 +41,36 @@
       width: 90%;
       max-width: 1000px;
       transition: background-color 0.3s, border 0.3s;
-      border: 2px solid #d4af37; /* Golden border */
+      border: 2px solid #d4af37;
+      text-decoration: none;
+      color: #f0e6d2;
     }
+
     .menu-option:hover {
       background-color: #d4af37;
-      border: 2px solid #ffd700; /* Golden border on hover */
+      border: 2px solid #ffd700;
+      color: #0d0d0d;
     }
+
     .menu-option img {
       width: 150px;
       height: 150px;
       border-radius: 10px;
-      margin-right: 1rem;
+      margin-left: 1rem;
       object-fit: cover;
     }
-    .menu-option a {
+
+    .menu-option span {
       font-size: 1.8rem;
-      color: #f0e6d2;
-      text-decoration: none;
       font-weight: bold;
-      display: flex;
-      align-items: center;
     }
+
     footer {
       margin-top: auto;
       padding: 1rem;
       background-color: #1a1a1a;
     }
+
     footer a {
       background-color: #d4af37;
       color: #0d0d0d;
@@ -74,6 +81,7 @@
       font-size: 1rem;
       transition: background-color 0.3s;
     }
+
     footer a:hover {
       background-color: #ffd700;
     }
@@ -82,59 +90,55 @@
 <body>
 
 <header>
-  <img src="res-logo2.png" alt="Restaurant Logo">
+  <img src="res-logo2.png" alt="לוגו המסעדה">
 </header>
 
 <h1>תפריט</h1>
 
+<!-- סלטים -->
+<a href="salads-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=סלטים" alt="סלטים">
+  <span>סלטים</span>
+</a>
 
-<!-- Main Dishes -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="סלטים">
-  <a href="main-dishes-he.html">סלטים</a>
-</div>
+<!-- מנות עיקריות -->
+<a href="main-dishes-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=מנות+עיקריות" alt="מנות עיקריות">
+  <span>מנות עיקריות</span>
+</a>
 
+<!-- מנות פתיחה -->
+<a href="appetizers-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=מנות+פתיחה" alt="מנות פתיחה">
+  <span>מנות פתיחה</span>
+</a>
 
-<!-- Main Dishes -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="מנות עיקריות">
-  <a href="main-dishes-he.html">מנות עיקריות</a>
-</div>
+<!-- נרגילות -->
+<a href="hookahs-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=נרגילות" alt="נרגילות">
+  <span>נרגילות</span>
+</a>
 
-<!-- Appetizers -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Appetizers" alt="מבשלים">
-  <a href="appetizers-he.html">מבשלים</a>
-</div>
+<!-- שתייה קלה -->
+<a href="drinks-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=שתייה" alt="שתייה">
+  <span>שתייה</span>
+</a>
 
+<!-- מיצים -->
+<a href="juices-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=מיצים" alt="מיצים">
+  <span>מיצים</span>
+</a>
 
-<!-- Hookahs -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Hookahs" alt="נרגילות">
-  <a href="hookahs-he.html">נרגילות</a>
-</div>
-
-<!-- Drinks -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Drinks" alt="משקאות">
-  <a href="drinks-he.html">משקאות</a>
-</div>
-
-<!-- Juices -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Juices" alt="מיצים">
-  <a href="juices-he.html">מיצים</a>
-</div>
-
-<!-- Desserts -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Desserts" alt="קינוחים">
-  <a href="desserts-he.html">קינוחים</a>
-</div>
+<!-- קינוחים -->
+<a href="desserts-he.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=קינוחים" alt="קינוחים">
+  <span>קינוחים</span>
+</a>
 
 <footer>
   <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
-
 </footer>
 
 </body>
