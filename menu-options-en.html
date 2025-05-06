@@ -12,21 +12,24 @@
       color: #f0e6d2;
       display: flex;
       flex-direction: column;
-      align-items: center; /* مركز المحتوى أفقيًا */
-      justify-content: center; /* مركز المحتوى عموديًا */
+      align-items: center;
+      justify-content: center;
       min-height: 100vh;
       text-align: center;
     }
+
     header img {
       width: 200px;
       height: auto;
       margin: 2rem 0;
     }
+
     h1 {
       font-size: 3rem;
       color: #d4af37;
       margin-bottom: 1.5rem;
     }
+
     .menu-option {
       margin: 2rem 0;
       display: flex;
@@ -38,12 +41,17 @@
       width: 90%;
       max-width: 1000px;
       transition: background-color 0.3s, border 0.3s;
-      border: 2px solid #d4af37; /* الخط الذهبي المحيط */
+      border: 2px solid #d4af37;
+      text-decoration: none;
+      color: #f0e6d2;
     }
+
     .menu-option:hover {
       background-color: #d4af37;
-      border: 2px solid #ffd700; /* تغيير اللون الذهبي عند التمرير */
+      border: 2px solid #ffd700;
+      color: #0d0d0d;
     }
+
     .menu-option img {
       width: 150px;
       height: 150px;
@@ -51,19 +59,18 @@
       margin-right: 1rem;
       object-fit: cover;
     }
-    .menu-option a {
+
+    .menu-option span {
       font-size: 1.8rem;
-      color: #f0e6d2;
-      text-decoration: none;
       font-weight: bold;
-      display: flex;
-      align-items: center;
     }
+
     footer {
       margin-top: auto;
       padding: 1rem;
       background-color: #1a1a1a;
     }
+
     footer a {
       background-color: #d4af37;
       color: #0d0d0d;
@@ -74,6 +81,7 @@
       font-size: 1rem;
       transition: background-color 0.3s;
     }
+
     footer a:hover {
       background-color: #ffd700;
     }
@@ -87,48 +95,47 @@
 
 <h1>Menu</h1>
 
-<!-- Main Dishes -->
-<div class="menu-option">
-  <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="Salads">
-  <a href="main-dishes-en.html">Salads</a>
-</div>
+<!-- Salads -->
+<a href="salads-en.html" class="menu-option">
+  <img src="https://via.placeholder.com/150x150.png?text=Salads" alt="Salads">
+  <span>Salads</span>
+</a>
 
 <!-- Main Dishes -->
-<div class="menu-option">
+<a href="main-dishes-en.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Main+Dishes" alt="Main Dishes">
-  <a href="main-dishes-en.html">Main Dishes</a>
-</div>
+  <span>Main Dishes</span>
+</a>
 
 <!-- Appetizers -->
-<div class="menu-option">
+<a href="appetizers-en.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Appetizers" alt="Appetizers">
-  <a href="appetizers-en.html">Appetizers</a>
-</div>
-
+  <span>Appetizers</span>
+</a>
 
 <!-- Hookahs -->
-<div class="menu-option">
+<a href="hookahs-en.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Hookahs" alt="Hookahs">
-  <a href="hookahs-en.html">Hookahs</a>
-</div>
+  <span>Hookahs</span>
+</a>
 
 <!-- Drinks -->
-<div class="menu-option">
+<a href="drinks-en.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Drinks" alt="Drinks">
-  <a href="drinks-en.html">Drinks</a>
-</div>
+  <span>Drinks</span>
+</a>
 
 <!-- Juices -->
-<div class="menu-option">
+<a href="juices-en.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Juices" alt="Juices">
-  <a href="juices-en.html">Juices</a>
-</div>
+  <span>Juices</span>
+</a>
 
 <!-- Desserts -->
-<div class="menu-option">
+<a href="desserts-en.html" class="menu-option">
   <img src="https://via.placeholder.com/150x150.png?text=Desserts" alt="Desserts">
-  <a href="desserts-en.html">Desserts</a>
-</div>
+  <span>Desserts</span>
+</a>
 
 <footer>
   <a href="javascript:history.back()">Return to the previous page</a>
