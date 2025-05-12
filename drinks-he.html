@@ -1,137 +1,182 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>משקאות - מסעדת שף וליד</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>משקאות - מסעדת השף ווליד</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      padding: 0;
       background-color: #0d0d0d;
-      color: #f0e6d2;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: gold;
+    }
+    .menu-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    header img {
-      width: 180px;
-      height: auto;
-      margin: 2rem 0;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #d4af37;
-    }
-    .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      width: 90%;
-      max-width: 1000px;
-      padding-bottom: 2rem;
+      gap: 20px;
+      padding-bottom: 50px;
     }
     .item-card {
       background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      transition: background-color 0.3s;
+      gap: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .item-card:hover {
-      background-color: #292929;
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
     }
     .item-card img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
+      width: 120px;
+      height: 120px;
       border-radius: 10px;
-      margin-bottom: 1rem;
-      background-color: #333;
+      object-fit: cover;
     }
     .item-card h2 {
-      font-size: 1.2rem;
-      color: #ffd700;
-      margin: 0.5rem 0;
+      margin: 0;
+      font-size: 1.5em;
+      color: white;
     }
     .item-card p {
-      font-size: 1rem;
-      margin: 0.5rem 0;
-      color: #f0e6d2;
+      margin: 5px 0;
+      color: #ccc;
+      font-size: 0.9em;
     }
-    .item-card .price {
-      font-weight: bold;
-      color: #ffd700;
-      margin-top: 0.5rem;
-    }
-    footer {
-      margin: 2rem 0;
-    }
-    footer a {
-      background-color: #d4af37;
-      color: #0d0d0d;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-    footer a:hover {
-      background-color: #ffd700;
+    .price {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: gold;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
-</header>
+  <h1>תפריט משקאות</h1>
 
-<h1>משקאות</h1>
+  <div class="menu-container">
 
-<div class="menu-items">
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מילקשייק שוקולד" />
+      <div>
+          <h2>מילקשייק שוקולד</h2>
+          <div class="price">₪27</div>
+      </div>
+    </div>
 
-  <div class="item-card">
-    <img src="#" alt="פנטה">
-    <h2>פנטה</h2>
-    <p>משקה מוגז בטעם תפוז.</p>
-    <div class="price">₪13</div>
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מילקשייק וניל" />
+      <div>
+          <h2>מילקשייק וניל</h2>
+          <div class="price">₪27</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מילקשייק אוראו" />
+      <div>
+          <h2>מילקשייק אוראו</h2>
+          <div class="price">₪27</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="XL אנרגיה" />
+      <div>
+          <h2>XL אנרגיה</h2>
+          <div class="price">₪13</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מוחיטו" />
+      <div>
+        <h2>מוחיטו</h2>
+        <p>טעמים: ברי, אננס, אבטיח, תפוח, מיקס מיוחד.</p>
+        <p>מוגש עם שתייה קלה לבחירתך.</p>
+        <div class="price">₪30</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מילקשייק ברי" />
+      <div>
+          <h2>מילקשייק ברי</h2>
+          <div class="price">₪27</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מיץ ענבים" />
+      <div>
+          <h2>מיץ ענבים</h2>
+          <div class="price">₪13</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סודה" />
+      <div>
+          <h2>סודה</h2>
+          <div class="price">₪12</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מים" />
+      <div>
+          <h2>מים</h2>
+          <div class="price">₪17</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קולה זירו" />
+      <div>
+          <h2>קולה זירו</h2>
+          <div class="price">₪13</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="ספרייט" />
+      <div>
+          <h2>ספרייט</h2>
+          <div class="price">₪13</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פנטה" />
+      <div>
+          <h2>פנטה</h2>
+          <div class="price">₪13</div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קולה" />
+      <div>
+          <h2>קולה</h2>
+          <div class="price">₪13</div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="item-card">
-    <img src="#" alt="קוקה קולה">
-    <h2>קוקה קולה</h2>
-    <p>משקה מוגז בטעם קולה.</p>
-    <div class="price">₪13</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="ספראיט">
-    <h2>ספראיט</h2>
-    <p>משקה מוגז בטעם לימון.</p>
-    <div class="price">₪13</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="מים מינרליים">
-    <h2>מים מינרליים</h2>
-    <p>מים מינרליים טריים.</p>
-    <div class="price">₪17</div>
-  </div>
-
-</div>
-
-<footer>
-  <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
-
-</footer>
 
 </body>
 </html>
