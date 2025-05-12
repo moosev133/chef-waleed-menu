@@ -1,137 +1,56 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>קינוחים - מסעדת שף וליד</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>קינוחים - מסעדת השף ווליד</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #0d0d0d;
-      color: #f0e6d2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    header img {
-      width: 180px;
-      height: auto;
-      margin: 2rem 0;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #d4af37;
-    }
-    .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      width: 90%;
-      max-width: 1000px;
-      padding-bottom: 2rem;
-    }
-    .item-card {
-      background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: background-color 0.3s;
-    }
-    .item-card:hover {
-      background-color: #292929;
-    }
-    .item-card img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      background-color: #333;
-    }
-    .item-card h2 {
-      font-size: 1.2rem;
-      color: #ffd700;
-      margin: 0.5rem 0;
-    }
-    .item-card p {
-      font-size: 1rem;
-      margin: 0.5rem 0;
-      color: #f0e6d2;
-    }
-    .item-card .price {
-      font-weight: bold;
-      color: #ffd700;
-      margin-top: 0.5rem;
-    }
-    footer {
-      margin: 2rem 0;
-    }
-    footer a {
-      background-color: #d4af37;
-      color: #0d0d0d;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-    footer a:hover {
-      background-color: #ffd700;
-    }
+    /* Same style as AR */
   </style>
 </head>
 <body>
 
-<header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
-</header>
+  <h1>קינוחים</h1>
 
-<h1>קינוחים</h1>
+  <div class="menu-container">
 
-<div class="menu-items">
+    <div class="item-card">
+      <img src="your-image-url" alt="סן סבסטיאן" />
+      <h2>סן סבסטיאן</h2>
+      <div class="price">₪45.00</div>
+    </div>
 
-  <div class="item-card">
-    <img src="#" alt="כנאפה">
-    <h2>כנאפה</h2>
-    <p>כנאפה עם קסטה או גבינה טרייה.</p>
-    <div class="price">₪40</div>
+    <div class="item-card">
+      <img src="your-image-url" alt="עוגת גבינה" />
+      <h2>עוגת גבינה</h2>
+      <div class="price">₪40.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="עוגה חמה" />
+      <h2>עוגה חמה</h2>
+      <div class="price">₪45.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="סופלה" />
+      <h2>סופלה</h2>
+      <div class="price">₪45.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="סושי אוריאו" />
+      <h2>סושי אוריאו</h2>
+      <div class="price">₪45.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="סניקרס" />
+      <h2>סניקרס</h2>
+      <div class="price">₪45.00</div>
+    </div>
+
   </div>
-
-  <div class="item-card">
-    <img src="#" alt="אום עלי">
-    <h2>אום עלי</h2>
-    <p>קינוח מצרי עם אגוזים.</p>
-    <div class="price">₪35</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="עיסידה">
-    <h2>עיסידה</h2>
-    <p>עיסידה עשירה ובריאה.</p>
-    <div class="price">₪28</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="בקלאווה">
-    <h2>בקלאווה</h2>
-    <p>קינוח מזרחי עשיר באגוזים ודבש.</p>
-    <div class="price">₪25</div>
-  </div>
-
-</div>
-
-<footer>
-  <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
-
-</footer>
 
 </body>
 </html>
