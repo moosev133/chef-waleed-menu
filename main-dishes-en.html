@@ -2,87 +2,22 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main Dishes - Chef Waleed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Dishes - Chef Waleed Restaurant</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #0d0d0d;
-      color: #f0e6d2;
-      text-align: center;
-    }
-    header img {
-      width: 180px;
-      margin: 2rem auto;
-      display: block;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #d4af37;
-      margin-bottom: 2rem;
-    }
-    .menu-items {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
-    }
-    .item-card {
-      background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-      text-align: left;
-    }
-    .item-card img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      cursor: zoom-in;
-    }
-    .item-card img:hover {
-      transform: scale(1.6);
-      z-index: 2;
-    }
-    .item-card h2 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: #ffd700;
-    }
-    .item-card p {
-      margin: 0.5rem 0;
-      font-size: 1rem;
-    }
-    .price {
-      color: #ffd700;
-      font-weight: bold;
-      margin-top: 0.5rem;
-    }
-    footer {
-      margin: 2rem 0;
-    }
-    footer a {
-      background-color: #d4af37;
-      color: #0d0d0d;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-    footer a:hover {
-      background-color: #ffd700;
-    }
+    body { margin: 0; padding: 0; background-color: #0d0d0d; color: #fff; font-family: 'Arial', sans-serif; text-align: center; }
+    header img { width: 180px; margin: 2rem auto; display: block; }
+    h1 { margin: 30px 0; font-size: 2.5em; color: gold; }
+    .menu-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding-bottom: 50px; }
+    .item-card { background-color: #1a1a1a; border: 2px solid gold; border-radius: 20px; padding: 20px; width: 250px; transition: transform 0.3s, box-shadow 0.3s; }
+    .item-card:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+    .item-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+    .item-card h2 { margin: 10px 0 0; font-size: 1.2em; color: white; }
+    .item-card p { font-size: 0.9em; color: #ccc; margin: 5px 0; }
+    .price { margin-top: 5px; font-size: 1.2em; color: gold; }
+    footer { margin-top: 2rem; padding: 1rem; background-color: #1a1a1a; }
+    footer a { background-color: #d4af37; color: #0d0d0d; padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1rem; transition: background-color 0.3s; }
+    footer a:hover { background-color: #ffd700; }
   </style>
 </head>
 <body>
@@ -93,282 +28,155 @@
 
 <h1>Main Dishes</h1>
 
-<div class="menu-items">
-    <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Seafood Mix (Fried/Cooked)" />
-    <div>
-      <h2>Seafood Mix (Fried/Cooked)</h2>
-      <p>A mix of seafood either fried or cooked as you wish.</p>
-      <div class="price">₪95</div>
-    </div>
+<div class="menu-container">
+
+  <!-- Starting from header and styles as previously shown -->
+
+<div class="menu-container">
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Seafood Mix" />
+    <h2>Seafood Mix</h2>
+    <p>A mix of fried or cooked seafood as you like.</p>
+    <div class="price">₪95</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Arayes" />
-    <div>
-      <h2>Arayes</h2>
-      <p>Grilled pita bread stuffed with seasoned meat.</p>
-      <div class="price">₪70</div>
-    </div>
+    <img src="your-image-url" alt="Arayes" />
+    <h2>Arayes</h2>
+    <p>Grilled pita bread stuffed with spiced meat.</p>
+    <div class="price">₪70</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Clay Pot - Seafood/Chicken" />
-    <div>
-      <h2>Clay Pot - Seafood/Chicken</h2>
-      <p>Hot clay pot with seafood or chicken as requested.</p>
-      <div class="price">₪90</div>
-    </div>
+    <img src="your-image-url" alt="Clay Pot Seafood/Chicken" />
+    <h2>Clay Pot Seafood/Chicken</h2>
+    <p>Hot clay pot with seafood or chicken of your choice.</p>
+    <div class="price">₪90</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="T-Bone Angus" />
-    <div>
-      <h2>T-Bone Angus</h2>
-      <p>Premium Angus T-bone steak grilled to perfection.</p>
-      <div class="price">₪170</div>
-    </div>
+    <img src="your-image-url" alt="T-Bone Angus" />
+    <h2>T-Bone Angus</h2>
+    <p>Premium Angus T-bone steak.</p>
+    <div class="price">₪170</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Veal Stroganoff" />
-    <div>
-      <h2>Veal Stroganoff</h2>
-      <p>Tender veal slices in creamy mushroom sauce.</p>
-      <div class="price">₪95</div>
-    </div>
+    <img src="your-image-url" alt="Veal Stroganoff" />
+    <h2>Veal Stroganoff</h2>
+    <p>Veal slices cooked in creamy mushroom sauce.</p>
+    <div class="price">₪95</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Meat Clay Pot" />
-    <div>
-      <h2>Meat Clay Pot</h2>
-      <p>Slow-cooked meat in clay pot with vegetables.</p>
-      <div class="price">₪110</div>
-    </div>
+    <img src="your-image-url" alt="Meat Clay Pot" />
+    <h2>Meat Clay Pot</h2>
+    <p>Slow-cooked meat with vegetables in a clay pot.</p>
+    <div class="price">₪110</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Cooked Schnitzel Bites" />
-    <div>
-      <h2>Cooked Schnitzel Bites</h2>
-      <p>Fried and cooked schnitzel bites.</p>
-      <div class="price">₪65</div>
-    </div>
+    <img src="your-image-url" alt="Schnitzelonim" />
+    <h2>Schnitzelonim</h2>
+    <p>Crispy schnitzel with side sauce.</p>
+    <div class="price">₪60</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Mokbang Chicken" />
-    <div>
-      <h2>Mokbang Chicken</h2>
-      <p>Fried chicken in Asian sauce.</p>
-      <div class="price">₪65</div>
-    </div>
+    <img src="your-image-url" alt="Mokbanas Chicken" />
+    <h2>Mokbanas Chicken</h2>
+    <p>Fried chicken in Asian sauce.</p>
+    <div class="price">₪65</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Hummus with Meat" />
-    <div>
-      <h2>Hummus with Meat</h2>
-      <p>Creamy hummus topped with seasoned meat.</p>
-      <div class="price">₪60</div>
-    </div>
+    <img src="your-image-url" alt="Hummus with Meat" />
+    <h2>Hummus with Meat</h2>
+    <p>Hummus topped with cooked meat and spices.</p>
+    <div class="price">₪60</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Schnitzel Bites" />
-    <div>
-      <h2>Schnitzel Bites</h2>
-      <p>Crispy schnitzel served with dipping sauce.</p>
-      <div class="price">₪60</div>
-    </div>
+    <img src="your-image-url" alt="Scallops" />
+    <h2>Scallops</h2>
+    <p>Scallops cooked in creamy sauce.</p>
+    <div class="price">₪75</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Shrimp & Calamari" />
-    <div>
-      <h2>Shrimp & Calamari</h2>
-      <p>Shrimp and calamari grilled or fried.</p>
-      <div class="price">₪90</div>
-    </div>
-  </div>
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Filet" />
-    <div>
-      <h2>Filet</h2>
-      <p>Grilled or fried filet steak slices.</p>
-      <div class="price">₪120</div>
-    </div>
+    <img src="your-image-url" alt="Wagyu Entrecote" />
+    <h2>Wagyu Entrecote</h2>
+    <p>Premium grilled Wagyu steak.</p>
+    <div class="price">₪180</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Entrecote" />
-    <div>
-      <h2>Entrecote</h2>
-      <p>Fresh grilled entrecote steak.</p>
-      <div class="price">₪120</div>
-    </div>
+    <img src="your-image-url" alt="Mokbanas Fillet" />
+    <h2>Mokbanas Fillet</h2>
+    <p>Beef fillet in Asian sauce.</p>
+    <div class="price">₪90</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Cordon Bleu" />
-    <div>
-      <h2>Cordon Bleu</h2>
-      <p>Chicken stuffed with cheese and mortadella.</p>
-      <div class="price">₪85</div>
-    </div>
+    <img src="your-image-url" alt="Lafranq" />
+    <h2>Lafranq</h2>
+    <p>Fried or grilled Lafranq fish.</p>
+    <div class="price">₪90</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Shrimp (Fried/Cooked)" />
-    <div>
-      <h2>Shrimp (Fried/Cooked)</h2>
-      <p>Fresh shrimp either fried or cooked.</p>
-      <div class="price">₪90</div>
-    </div>
+    <img src="your-image-url" alt="Calamari" />
+    <h2>Calamari</h2>
+    <p>Specially prepared calamari.</p>
+    <div class="price">₪80</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Salmon" />
-    <div>
-      <h2>Salmon</h2>
-      <p>Grilled salmon filet.</p>
-      <div class="price">₪95</div>
-    </div>
+    <img src="your-image-url" alt="Brisket" />
+    <h2>Brisket</h2>
+    <p>Slow-cooked meat with vegetables.</p>
+    <div class="price">₪80</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Kebab" />
-    <div>
-      <h2>Kebab</h2>
-      <p>Grilled minced meat skewers.</p>
-      <div class="price">₪80</div>
-    </div>
+    <img src="your-image-url" alt="Seafood Platter for 4" />
+    <h2>Seafood Platter for 4</h2>
+    <p>Assorted seafood dish for four.</p>
+    <div class="price">₪380</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Denise (Fried/Grilled)" />
-    <div>
-      <h2>Denise (Fried/Grilled)</h2>
-      <p>Denise fish cooked your way.</p>
-      <div class="price">₪95</div>
-    </div>
+    <img src="your-image-url" alt="Grilled Chicken Breast" />
+    <h2>Grilled Chicken Breast</h2>
+    <p>Marinated and grilled chicken breast.</p>
+    <div class="price">₪75</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Meat Platter for 4" />
-    <div>
-      <h2>Meat Platter for 4</h2>
-      <p>Premium meat feast for four people.</p>
-      <div class="price">₪450</div>
-    </div>
+    <img src="your-image-url" alt="Seafood Platter for Couple" />
+    <h2>Seafood Platter for Couple</h2>
+    <p>Luxury seafood dish for two.</p>
+    <div class="price">₪210</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Meat Platter for 2" />
-    <div>
-      <h2>Meat Platter for 2</h2>
-      <p>Grilled meat platter for two.</p>
-      <div class="price">₪280</div>
-    </div>
+    <img src="your-image-url" alt="Sfiha Meat" />
+    <h2>Sfiha Meat</h2>
+    <p>Pastry filled with grilled meat.</p>
+    <div class="price">₪65</div>
   </div>
 
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Shells" />
-    <div>
-      <h2>Shells</h2>
-      <p>Cooked shells in creamy sauce.</p>
-      <div class="price">₪75</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Wagyu Entrecote" />
-    <div>
-      <h2>Wagyu Entrecote</h2>
-      <p>Grilled premium Wagyu steak.</p>
-      <div class="price">₪180</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Mokbang Filet" />
-    <div>
-      <h2>Mokbang Filet</h2>
-      <p>Filet beef in Asian-style sauce.</p>
-  <div class="price">₪90</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Lafranc (Fried/Grilled)" />
-    <div>
-      <h2>Lafranc (Fried/Grilled)</h2>
-      <p>Lafranc fish, cooked your choice.</p>
-      <div class="price">₪90</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Calamari (Fried/Cooked)" />
-    <div>
-      <h2>Calamari (Fried/Cooked)</h2>
-      <p>Calamari prepared in a special way.</p>
-      <div class="price">₪80</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Brisket" />
-    <div>
-      <h2>Brisket</h2>
-      <p>Slow-cooked beef with vegetables.</p>
-      <div class="price">₪80</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Fish Platter for 4" />
-    <div>
-      <h2>Fish Platter for 4</h2>
-      <p>Assorted fish platter for four.</p>
-      <div class="price">₪380</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Chicken Breast" />
-    <div>
-      <h2>Chicken Breast</h2>
-      <p>Marinated grilled chicken breast.</p>
-      <div class="price">₪75</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Fish Platter for 2" />
-    <div>
-      <h2>Fish Platter for 2</h2>
-      <p>Deluxe fish platter for two.</p>
-      <div class="price">₪210</div>
-    </div>
-  </div>
-
-  <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Lahm Bi Ajeen" />
-    <div>
-      <h2>Lahm Bi Ajeen</h2>
-      <p>Pastry filled with grilled meat.</p>
-      <div class="price">₪65</div>
-    </div>
-  </div>
-
-  <!-- COPY THE ENGLISH MEAL CARDS FROM EARLIER HERE -->
-  <!-- (Let me know if you want me to paste all 31 dishes in this same message) -->
 </div>
 
 <footer>
-  <a href="javascript:history.back()">Back to previous page</a>
+  <a href="javascript:history.back()">Back to Previous Page</a>
+</footer>
+
+</div>
+
+<footer>
+  <a href="javascript:history.back()">Back to Previous Page</a>
 </footer>
 
 </body>
