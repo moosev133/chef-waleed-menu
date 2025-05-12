@@ -2,97 +2,180 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>מנות איטלקיות - מסעדת השף וליד</title>
   <style>
-    /* Same style as AR */
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #0d0d0d;
+      background-image: url('your-background-image.jpg'); /* Placeholder for background */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #f0e6d2;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      margin: 2rem auto;
+      display: block;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d4af37;
+      margin-bottom: 2rem;
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+    .item-card {
+      background-color: #1a1a1a;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+    .item-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .item-card h2 {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
+    }
+    .item-card p {
+      margin: 5px 0;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+    .price {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: gold;
+    }
+    footer {
+      margin: 2rem 0;
+    }
+    footer a {
+      background-color: #d4af37;
+      color: #0d0d0d;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    footer a:hover {
+      background-color: #ffd700;
+    }
   </style>
 </head>
 <body>
 
-  <h1>מנות איטלקיות</h1>
+<header>
+  <img src="res-logo2.png" alt="לוגו המסעדה">
+</header>
 
-  <div class="menu-container">
+<h1>מנות איטלקיות</h1>
 
-    <div class="item-card">
-      <img src="your-image-url" alt="פסטה פטוצ'יני שרימפס" />
-      <h2>פסטה פטוצ'יני שרימפס</h2>
-      <p>פסטה פטוצ'יני עם שרימפס ורוטב שמנת עשיר.</p>
-      <div class="price">₪90.00</div>
-    </div>
+<div class="menu-container">
 
-    <div class="item-card">
-      <img src="your-image-url" alt="פסטה פטוצ'יני עוף" />
-      <h2>פסטה פטוצ'יני עוף</h2>
-      <p>פטוצ'יני ברוטב שמנת ועוף עסיסי.</p>
-      <div class="price">₪75.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="פסטה פטוצ'יני פילה עגל" />
-      <h2>פסטה פטוצ'יני פילה עגל</h2>
-      <p>פטוצ'יני עם פרוסות פילה עגל ורוטב שמנת מפואר.</p>
-      <div class="price">₪90.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="פסטה פטוצ'יני" />
-      <h2>פסטה פטוצ'יני</h2>
-      <p>פטוצ'יני קלאסית ברוטב שמנת.</p>
-      <div class="price">₪65.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="רביולי גבינה" />
-      <h2>רביולי גבינה</h2>
-      <p>רביולי במילוי גבינה, ברוטב שמנת.</p>
-      <div class="price">₪70.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="רביולי תפוח אדמה" />
-      <h2>רביולי תפוח אדמה</h2>
-      <p>רביולי במילוי תפוח אדמה ורוטב איטלקי.</p>
-      <div class="price">₪70.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="מקראם עוף" />
-      <h2>מקראם עוף</h2>
-      <p>מקראם איטלקי עם פרוסות עוף ורוטב עשיר.</p>
-      <div class="price">₪60.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="מקראם פונג\תפוח אדמה" />
-      <h2>מקראם פונג\תפוח אדמה</h2>
-      <p>מקראם במילוי פטריות או תפוח אדמה, ברוטב שמנת טעים.</p>
-      <div class="price">₪55.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="מקראם תפוח אדמה" />
-      <h2>מקראם תפוח אדמה</h2>
-      <p>מקראם איטלקי במילוי תפוח אדמה ורוטב שמנת ייחודי.</p>
-      <div class="price">₪55.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="פסטה פנה" />
-      <h2>פסטה פנה</h2>
-      <p>פסטה פנה ברוטב עגבניות או שמנת לפי בחירה.</p>
-      <div class="price">₪65.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="קנלוני גבינה" />
-      <h2>קנלוני גבינה</h2>
-      <p>גלילות קנלוני במילוי גבינה ברוטב בשמל.</p>
-      <div class="price">₪70.00</div>
-    </div>
-
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פסטה פטוצ'יני שרימפס" />
+    <h2>פסטה פטוצ'יני שרימפס</h2>
+    <p>פסטה פטוצ'יני עם שרימפס ורוטב שמנת עשיר.</p>
+    <div class="price">₪90.00</div>
   </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פסטה פטוצ'יני עוף" />
+    <h2>פסטה פטוצ'יני עוף</h2>
+    <p>פטוצ'יני ברוטב שמנת ועוף עסיסי.</p>
+    <div class="price">₪75.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פסטה פטוצ'יני פילה עגל" />
+    <h2>פסטה פטוצ'יני פילה עגל</h2>
+    <p>פטוצ'יני עם פרוסות פילה עגל ורוטב שמנת מפואר.</p>
+    <div class="price">₪90.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פסטה פטוצ'יני" />
+    <h2>פסטה פטוצ'יני</h2>
+    <p>פטוצ'יני קלאסית ברוטב שמנת.</p>
+    <div class="price">₪65.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="רביולי גבינה" />
+    <h2>רביולי גבינה</h2>
+    <p>רביולי במילוי גבינה, ברוטב שמנת.</p>
+    <div class="price">₪70.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="רביולי תפוח אדמה" />
+    <h2>רביולי תפוח אדמה</h2>
+    <p>רביולי במילוי תפוח אדמה ורוטב איטלקי.</p>
+    <div class="price">₪70.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מקראם עוף" />
+    <h2>מקראם עוף</h2>
+    <p>מקראם איטלקי עם פרוסות עוף ורוטב עשיר.</p>
+    <div class="price">₪60.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מקראם פונג\תפוח אדמה" />
+    <h2>מקראם פונג\תפוח אדמה</h2>
+    <p>מקראם במילוי פטריות או תפוח אדמה, ברוטב שמנת טעים.</p>
+    <div class="price">₪55.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מקראם תפוח אדמה" />
+    <h2>מקראם תפוח אדמה</h2>
+    <p>מקראם איטלקי במילוי תפוח אדמה ורוטב שמנת ייחודי.</p>
+    <div class="price">₪55.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פסטה פנה" />
+    <h2>פסטה פנה</h2>
+    <p>פסטה פנה ברוטב עגבניות או שמנת לפי בחירה.</p>
+    <div class="price">₪65.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="קנלוני גבינה" />
+    <h2>קנלוני גבינה</h2>
+    <p>גלילות קנלוני במילוי גבינה ברוטב בשמל.</p>
+    <div class="price">₪70.00</div>
+  </div>
+
+</div>
+
+<footer>
+  <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
+</footer>
 
 </body>
 </html>
-
