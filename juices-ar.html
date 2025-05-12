@@ -1,137 +1,103 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عصائر طبيعية - مطعم شيف وليد</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>عصائر طبيعية - مطعم الشيف وليد</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Cairo', sans-serif;
+      padding: 0;
       background-color: #0d0d0d;
-      color: #f0e6d2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
       text-align: center;
     }
-    header img {
-      width: 180px;
-      height: auto;
-      margin: 2rem 0;
-    }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #d4af37;
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: gold;
     }
-    .menu-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      width: 90%;
-      max-width: 1000px;
-      padding-bottom: 2rem;
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
     }
     .item-card {
       background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: background-color 0.3s;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
     .item-card:hover {
-      background-color: #292929;
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
     }
     .item-card img {
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 1rem;
-      background-color: #333;
     }
     .item-card h2 {
-      font-size: 1.2rem;
-      color: #ffd700;
-      margin: 0.5rem 0;
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
     }
-    .item-card p {
-      font-size: 1rem;
-      margin: 0.5rem 0;
-      color: #f0e6d2;
-    }
-    .item-card .price {
-      font-weight: bold;
-      color: #ffd700;
-      margin-top: 0.5rem;
-    }
-    footer {
-      margin: 2rem 0;
-    }
-    footer a {
-      background-color: #d4af37;
-      color: #0d0d0d;
-      padding: 0.8rem 1.5rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: background-color 0.3s;
-    }
-    footer a:hover {
-      background-color: #ffd700;
+    .price {
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: gold;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="https://via.placeholder.com/180x120.png?text=Logo" alt="Restaurant Logo">
-</header>
+  <h1>عصائر طبيعية</h1>
 
-<h1>عصائر طبيعية</h1>
+  <div class="menu-container">
 
-<div class="menu-items">
+    <div class="item-card">
+      <img src="your-image-url" alt="شيك فواكه" />
+      <h2>شيك فواكه</h2>
+      <div class="price">₪25.00</div>
+    </div>
 
-  <div class="item-card">
-    <img src="#" alt="عصير برتقال">
-    <h2>عصير برتقال</h2>
-    <p>عصير برتقال طازج.</p>
-    <div class="price">₪25</div>
+    <div class="item-card">
+      <img src="your-image-url" alt="جزر" />
+      <h2>جزر</h2>
+      <div class="price">₪20.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="برتقال وجزر" />
+      <h2>برتقال وجزر</h2>
+      <div class="price">₪20.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="جروس" />
+      <h2>جروس</h2>
+      <div class="price">₪25.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="ليمونادا" />
+      <h2>ليمونادا</h2>
+      <div class="price">₪20.00</div>
+    </div>
+
+    <div class="item-card">
+      <img src="your-image-url" alt="برتقال" />
+      <h2>برتقال</h2>
+      <div class="price">₪20.00</div>
+    </div>
+
   </div>
-
-  <div class="item-card">
-    <img src="#" alt="عصير رمان">
-    <h2>عصير رمان</h2>
-    <p>عصير رمان طبيعي منعش.</p>
-    <div class="price">₪30</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="عصير تفاح">
-    <h2>عصير تفاح</h2>
-    <p>عصير تفاح طبيعي طازج.</p>
-    <div class="price">₪20</div>
-  </div>
-
-  <div class="item-card">
-    <img src="#" alt="عصير ليمون">
-    <h2>عصير ليمون</h2>
-    <p>عصير ليمون طازج.</p>
-    <div class="price">₪22</div>
-  </div>
-
-</div>
-
-<footer>
-  <a href="javascript:history.back()">العودة إلى الصفحة السابقة</a>
-
-</footer>
 
 </body>
 </html>
