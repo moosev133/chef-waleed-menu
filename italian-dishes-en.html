@@ -5,94 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Italian Dishes - Chef Waleed Restaurant</title>
   <style>
-    /* Same style as AR */
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #0d0d0d;
+      background-image: url('your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-align: center;
+    }
+    header img {
+      width: 120px;
+      margin: 2rem auto;
+      display: block;
+    }
+    h1 {
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: gold;
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+    .item-card {
+      background-color: #1a1a1a;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    }
+    .item-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .item-card h2 {
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
+    }
+    .item-card p {
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+    .price {
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: gold;
+    }
+    footer {
+      margin: 2rem 0;
+    }
+    footer a {
+      background-color: #d4af37;
+      color: #0d0d0d;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    footer a:hover {
+      background-color: #ffd700;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Italian Dishes</h1>
+<header>
+  <img src="res-logo2.png" alt="Restaurant Logo">
+</header>
 
-  <div class="menu-container">
+<h1>Italian Dishes</h1>
 
-    <div class="item-card">
-      <img src="your-image-url" alt="Fettuccine Shrimp" />
-      <h2>Fettuccine Shrimp</h2>
-      <p>Fettuccine pasta with shrimp and rich creamy sauce.</p>
-      <div class="price">₪90.00</div>
-    </div>
+<div class="menu-container">
 
-    <div class="item-card">
-      <img src="your-image-url" alt="Fettuccine Chicken" />
-      <h2>Fettuccine Chicken</h2>
-      <p>Fettuccine with creamy sauce and tender chicken.</p>
-      <div class="price">₪75.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Fettuccine Veal Fillet" />
-      <h2>Fettuccine Veal Fillet</h2>
-      <p>Fettuccine with veal fillet slices and deluxe cream sauce.</p>
-      <div class="price">₪90.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Fettuccine" />
-      <h2>Fettuccine</h2>
-      <p>Classic fettuccine with creamy sauce.</p>
-      <div class="price">₪65.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Cheese Ravioli" />
-      <h2>Cheese Ravioli</h2>
-      <p>Ravioli stuffed with cheese, served with creamy sauce.</p>
-      <div class="price">₪70.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Potato Ravioli" />
-      <h2>Potato Ravioli</h2>
-      <p>Ravioli stuffed with potato, cooked in Italian sauce.</p>
-      <div class="price">₪70.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Chicken Macram" />
-      <h2>Chicken Macram</h2>
-      <p>Italian macram with chicken slices and rich sauce.</p>
-      <div class="price">₪60.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Mokram Fung/Potato" />
-      <h2>Mokram Fung/Potato</h2>
-      <p>Macram stuffed with mushrooms or potato, creamy sauce.</p>
-      <div class="price">₪55.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Potato Macram" />
-      <h2>Potato Macram</h2>
-      <p>Italian macram stuffed with potato, creamy special sauce.</p>
-      <div class="price">₪55.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Penne" />
-      <h2>Penne</h2>
-      <p>Penne pasta with tomato or creamy sauce as you like.</p>
-      <div class="price">₪65.00</div>
-    </div>
-
-    <div class="item-card">
-      <img src="your-image-url" alt="Cheese Cannelloni" />
-      <h2>Cheese Cannelloni</h2>
-      <p>Cannelloni rolls stuffed with cheese and béchamel sauce.</p>
-      <div class="price">₪70.00</div>
-    </div>
-
+  <div class="item-card">
+    <img src="your-image-url" alt="Fettuccine Shrimp" />
+    <h2>Fettuccine Shrimp</h2>
+    <p>Fettuccine pasta with shrimp and rich creamy sauce.</p>
+    <div class="price">₪90.00</div>
   </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Fettuccine Chicken" />
+    <h2>Fettuccine Chicken</h2>
+    <p>Fettuccine with creamy sauce and tender chicken.</p>
+    <div class="price">₪75.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Fettuccine Veal Fillet" />
+    <h2>Fettuccine Veal Fillet</h2>
+    <p>Fettuccine with veal fillet slices and deluxe cream sauce.</p>
+    <div class="price">₪90.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Fettuccine" />
+    <h2>Fettuccine</h2>
+    <p>Classic fettuccine with creamy sauce.</p>
+    <div class="price">₪65.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Cheese Ravioli" />
+    <h2>Cheese Ravioli</h2>
+    <p>Ravioli stuffed with cheese, served with creamy sauce.</p>
+    <div class="price">₪70.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Potato Ravioli" />
+    <h2>Potato Ravioli</h2>
+    <p>Ravioli stuffed with potato, cooked in Italian sauce.</p>
+    <div class="price">₪70.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Chicken Macram" />
+    <h2>Chicken Macram</h2>
+    <p>Italian macram with chicken slices and rich sauce.</p>
+    <div class="price">₪60.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Mokram Fung/Potato" />
+    <h2>Mokram Fung/Potato</h2>
+    <p>Macram stuffed with mushrooms or potato, creamy sauce.</p>
+    <div class="price">₪55.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Potato Macram" />
+    <h2>Potato Macram</h2>
+    <p>Italian macram stuffed with potato, creamy special sauce.</p>
+    <div class="price">₪55.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Penne" />
+    <h2>Penne</h2>
+    <p>Penne pasta with tomato or creamy sauce as you like.</p>
+    <div class="price">₪65.00</div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Cheese Cannelloni" />
+    <h2>Cheese Cannelloni</h2>
+    <p>Cannelloni rolls stuffed with cheese and béchamel sauce.</p>
+    <div class="price">₪70.00</div>
+  </div>
+
+</div>
+
+<footer>
+  <a href="javascript:history.back()">Back to Previous Page</a>
+</footer>
 
 </body>
 </html>
-
