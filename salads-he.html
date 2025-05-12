@@ -9,11 +9,15 @@
       margin: 0;
       font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
+      background-image: url('your-background-image.jpg'); /* placeholder */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: #f0e6d2;
       text-align: center;
     }
     header img {
-      width: 180px;
+      width: 120px;
       margin: 2rem auto;
       display: block;
     }
@@ -22,50 +26,45 @@
       color: #d4af37;
       margin-bottom: 2rem;
     }
-    .menu-items {
+    .menu-container {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
     }
     .item-card {
       background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 1rem;
-      text-align: right;
+      border: 2px solid #d4af37;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
     }
     .item-card img {
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s ease;
-      cursor: zoom-in;
-    }
-    .item-card img:hover {
-      transform: scale(1.6);
-      z-index: 2;
     }
     .item-card h2 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: #ffd700;
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
     }
     .item-card p {
-      margin: 0.5rem 0;
-      font-size: 1rem;
+      margin: 5px 0;
+      color: #ccc;
+      font-size: 0.9em;
     }
     .price {
-      color: #ffd700;
-      font-weight: bold;
-      margin-top: 0.5rem;
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: gold;
     }
     footer {
       margin: 2rem 0;
@@ -93,105 +92,85 @@
 
 <h1>סלטים</h1>
 
-<div class="menu-items">
+<div class="menu-container">
+
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלט עוף" />
-    <div>
-      <h2>סלט עוף</h2>
-      <p>תערובת ירקות טריים עם נתחי עוף בגריל.</p>
-      <div class="price">₪60</div>
-    </div>
+    <h2>סלט עוף</h2>
+    <p>תערובת ירקות טריים עם נתחי עוף בגריל.</p>
+    <div class="price">₪60</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלט ערבי גדול" />
-    <div>
-      <h2>סלט ערבי גדול</h2>
-      <p>ירקות קצוצים עם שמן זית ולימון.</p>
-      <div class="price">₪30</div>
-    </div>
+    <h2>סלט ערבי גדול</h2>
+    <p>ירקות קצוצים עם שמן זית ולימון.</p>
+    <div class="price">₪30</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלט יווני" />
-    <div>
-      <h2>סלט יווני</h2>
-      <p>חסה, עגבניות, זיתים, גבינת פטה ושמן זית.</p>
-      <div class="price">₪45</div>
-    </div>
+    <h2>סלט יווני</h2>
+    <p>חסה, עגבניות, זיתים, גבינת פטה ושמן זית.</p>
+    <div class="price">₪45</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלט חלומי" />
-    <div>
-      <h2>סלט חלומי</h2>
-      <p>ירקות טריים עם גבינת חלומי על הגריל.</p>
-      <div class="price">₪65</div>
-    </div>
+    <h2>סלט חלומי</h2>
+    <p>ירקות טריים עם גבינת חלומי על הגריל.</p>
+    <div class="price">₪65</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="פאטוש גדול" />
-    <div>
-      <h2>פאטוש גדול</h2>
-      <p>פאטוש עם לחם קלוי וירקות עונתיים.</p>
-      <div class="price">₪55</div>
-    </div>
+    <h2>פאטוש גדול</h2>
+    <p>פאטוש עם לחם קלוי וירקות עונתיים.</p>
+    <div class="price">₪55</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלט פילה" />
-    <div>
-      <h2>סלט פילה</h2>
-      <p>ירקות טריים עם נתחי פילה על האש.</p>
-      <div class="price">₪89</div>
-    </div>
+    <h2>סלט פילה</h2>
+    <p>ירקות טריים עם נתחי פילה על האש.</p>
+    <div class="price">₪89</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="טאבולה שף" />
-    <div>
-      <h2>טאבולה שף</h2>
-      <p>טאבולה בסגנון מיוחד של השף.</p>
-      <div class="price">₪47</div>
-    </div>
+    <h2>טאבולה שף</h2>
+    <p>טאבולה בסגנון מיוחד של השף.</p>
+    <div class="price">₪47</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="מבחר סלטים ליחיד" />
-    <div>
-      <h2>מבחר סלטים ליחיד</h2>
-      <p>מגוון סלטים מזרחיים לאדם אחד.</p>
-      <div class="price">₪45</div>
-    </div>
+    <h2>מבחר סלטים ליחיד</h2>
+    <p>מגוון סלטים מזרחיים לאדם אחד.</p>
+    <div class="price">₪45</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="סלט טוסט" />
-    <div>
-      <h2>סלט טוסט</h2>
-      <p>טוסט עם ירקות, גבינה מגורדת ורוטב.</p>
-      <div class="price">₪60</div>
-    </div>
+    <h2>סלט טוסט</h2>
+    <p>טוסט עם ירקות, גבינה מגורדת ורוטב.</p>
+    <div class="price">₪60</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="טאבולה גדול" />
-    <div>
-      <h2>טאבולה גדול</h2>
-      <p>טאבולה לבנונית מסורתית במנה גדולה.</p>
-      <div class="price">₪45</div>
-    </div>
+    <h2>טאבולה גדול</h2>
+    <p>טאבולה לבנונית מסורתית במנה גדולה.</p>
+    <div class="price">₪45</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120x120.png?text=תמונה" alt="חומוס" />
-    <div>
-      <h2>חומוס</h2>
-      <p>חומוס חלק עם שמן זית ולימון.</p>
-      <div class="price">₪18</div>
-    </div>
+    <h2>חומוס</h2>
+    <p>חומוס חלק עם שמן זית ולימון.</p>
+    <div class="price">₪18</div>
   </div>
+
 </div>
 
 <footer>
