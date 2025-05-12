@@ -9,63 +9,61 @@
       margin: 0;
       font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
-      color: #f0e6d2;
+      background-image: url('your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
       text-align: center;
     }
     header img {
-      width: 180px;
+      width: 120px;
       margin: 2rem auto;
       display: block;
     }
     h1 {
-      font-size: 2.5rem;
-      color: #d4af37;
-      margin-bottom: 2rem;
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: gold;
     }
-    .menu-items {
+    .menu-container {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
     }
     .item-card {
       background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 1rem;
-      text-align: right;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
     }
     .item-card img {
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s ease;
-      cursor: zoom-in;
-    }
-    .item-card img:hover {
-      transform: scale(1.6);
-      z-index: 2;
     }
     .item-card h2 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: #ffd700;
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
     }
     .item-card p {
-      margin: 0.5rem 0;
-      font-size: 1rem;
+      font-size: 0.9em;
+      margin: 5px 0;
     }
     .price {
-      color: #ffd700;
-      font-weight: bold;
-      margin-top: 0.5rem;
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: gold;
     }
     footer {
       margin: 2rem 0;
@@ -93,118 +91,90 @@
 
 <h1>المقبلات</h1>
 
-<div class="menu-items">
-
-  <!-- START of Appetizer Items -->
-
+<div class="menu-container">
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="هوم فرايز">
-    <div>
-      <h2>هوم فرايز</h2>
-      <p>بطاطا مقلية منزلية مع تتبيلة خاصة.</p>
-      <div class="price">₪30</div>
-    </div>
+    <img src="your-image-url" alt="هوم فرايز" />
+    <h2>هوم فرايز</h2>
+    <p>بطاطا مقلية منزلية مع تتبيلة خاصة.</p>
+    <div class="price">₪30</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="كبه (حبه)">
-    <div>
-      <h2>كبه (حبه)</h2>
-      <p>كبة محشوة باللحم والمقلية.</p>
-      <div class="price">₪7</div>
-    </div>
+    <img src="your-image-url" alt="كبه (حبه)" />
+    <h2>كبه (حبه)</h2>
+    <p>كبة محشوة باللحم والمقلية.</p>
+    <div class="price">₪7</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="معجنات">
-    <div>
-      <h2>معجنات</h2>
-      <p>تشكيلة من المعجنات الطازجة.</p>
-      <div class="price">₪33</div>
-    </div>
+    <img src="your-image-url" alt="معجنات" />
+    <h2>معجنات</h2>
+    <p>تشكيلة من المعجنات الطازجة.</p>
+    <div class="price">₪33</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="كرباتشيو فيلي">
-    <div>
-      <h2>كرباتشيو فيلي</h2>
-      <p>شرائح رقيقة من لحم الفيليه مع زيت الزيتون.</p>
-      <div class="price">₪52</div>
-    </div>
+    <img src="your-image-url" alt="كرباتشيو فيلي" />
+    <h2>كرباتشيو فيلي</h2>
+    <p>شرائح رقيقة من لحم الفيليه مع زيت الزيتون.</p>
+    <div class="price">₪52</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="باذنجان مع طحينه">
-    <div>
-      <h2>باذنجان مع طحينه</h2>
-      <p>باذنجان مشوي مع طحينة وصوص الليمون.</p>
-      <div class="price">₪35</div>
-    </div>
+    <img src="your-image-url" alt="باذنجان مع طحينه" />
+    <h2>باذنجان مع طحينه</h2>
+    <p>باذنجان مشوي مع طحينة وصوص الليمون.</p>
+    <div class="price">₪35</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="ارتيشوك">
-    <div>
-      <h2>ارتيشوك</h2>
-      <p>أرضي شوكي محضر بطريقة الشيف.</p>
-      <div class="price">₪40</div>
-    </div>
+    <img src="your-image-url" alt="ارتيشوك" />
+    <h2>ارتيشوك</h2>
+    <p>أرضي شوكي محضر بطريقة الشيف.</p>
+    <div class="price">₪40</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="فطر محشي بالجبنة">
-    <div>
-      <h2>فطر محشي بالجبنة</h2>
-      <p>فطر طازج محشي بالجبنة الذائبة.</p>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="فطر محشي بالجبنة" />
+    <h2>فطر محشي بالجبنة</h2>
+    <p>فطر طازج محشي بالجبنة الذائبة.</p>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="بلاطه مقبلات">
-    <div>
-      <h2>بلاطه مقبلات</h2>
-      <p>تشكيلة فاخرة من المقبلات المتنوعة.</p>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="بلاطه مقبلات" />
+    <h2>بلاطه مقبلات</h2>
+    <p>تشكيلة فاخرة من المقبلات المتنوعة.</p>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="ميني عرايس">
-    <div>
-      <h2>ميني عرايس</h2>
-      <p>قطع خبز محشوة بلحم مشوي.</p>
-      <div class="price">₪40</div>
-    </div>
+    <img src="your-image-url" alt="ميني عرايس" />
+    <h2>ميني عرايس</h2>
+    <p>قطع خبز محشوة بلحم مشوي.</p>
+    <div class="price">₪40</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="مقبلات 4">
-    <div>
-      <h2>مقبلات 4</h2>
-      <p>أربع أنواع من المقبلات على طبق واحد.</p>
-      <div class="price">₪100</div>
-    </div>
+    <img src="your-image-url" alt="مقبلات 4" />
+    <h2>مقبلات 4</h2>
+    <p>أربع أنواع من المقبلات على طبق واحد.</p>
+    <div class="price">₪100</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="جبنة مقلية">
-    <div>
-      <h2>جبنة مقلية</h2>
-      <p>قطع جبنة مقلية مقرمشة.</p>
-      <div class="price">₪33</div>
-    </div>
+    <img src="your-image-url" alt="جبنة مقلية" />
+    <h2>جبنة مقلية</h2>
+    <p>قطع جبنة مقلية مقرمشة.</p>
+    <div class="price">₪33</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120" alt="شيبس">
-    <div>
-      <h2>شيبس</h2>
-      <p>بطاطا مقلية مملحة ومقرمشة.</p>
-      <div class="price">₪17</div>
-    </div>
+    <img src="your-image-url" alt="شيبس" />
+    <h2>شيبس</h2>
+    <p>بطاطا مقلية مملحة ومقرمشة.</p>
+    <div class="price">₪17</div>
   </div>
-
 </div>
 
 <footer>
