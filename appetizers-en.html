@@ -9,63 +9,61 @@
       margin: 0;
       font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
-      color: #f0e6d2;
+      background-image: url('your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
       text-align: center;
     }
     header img {
-      width: 180px;
+      width: 120px;
       margin: 2rem auto;
       display: block;
     }
     h1 {
-      font-size: 2.5rem;
-      color: #d4af37;
-      margin-bottom: 2rem;
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: gold;
     }
-    .menu-items {
+    .menu-container {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
     }
     .item-card {
       background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-      text-align: left;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
     }
     .item-card img {
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s ease;
-      cursor: zoom-in;
-    }
-    .item-card img:hover {
-      transform: scale(1.6);
-      z-index: 2;
     }
     .item-card h2 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: #ffd700;
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
     }
     .item-card p {
-      margin: 0.5rem 0;
-      font-size: 1rem;
+      font-size: 0.9em;
+      margin: 5px 0;
     }
     .price {
-      color: #ffd700;
-      font-weight: bold;
-      margin-top: 0.5rem;
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: gold;
     }
     footer {
       margin: 2rem 0;
@@ -93,114 +91,90 @@
 
 <h1>Appetizers</h1>
 
-<div class="menu-items">
+<div class="menu-container">
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Home Fries">
-    <div>
-      <h2>Home Fries</h2>
-      <p>Homestyle fried potatoes with special seasoning.</p>
-      <div class="price">₪30</div>
-    </div>
+    <h2>Home Fries</h2>
+    <p>Homestyle fried potatoes with special seasoning.</p>
+    <div class="price">₪30</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Kibbeh (per piece)">
-    <div>
-      <h2>Kibbeh (per piece)</h2>
-      <p>Deep-fried bulgur shells stuffed with spiced minced meat.</p>
-      <div class="price">₪7</div>
-    </div>
+    <h2>Kibbeh (per piece)</h2>
+    <p>Deep-fried bulgur shells stuffed with spiced minced meat.</p>
+    <div class="price">₪7</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Pastries">
-    <div>
-      <h2>Pastries</h2>
-      <p>Assorted fresh pastries filled with cheese and vegetables.</p>
-      <div class="price">₪33</div>
-    </div>
+    <h2>Pastries</h2>
+    <p>Assorted fresh pastries filled with cheese and vegetables.</p>
+    <div class="price">₪33</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Filet Carpaccio">
-    <div>
-      <h2>Filet Carpaccio</h2>
-      <p>Thinly sliced beef filet drizzled with olive oil and lemon.</p>
-      <div class="price">₪52</div>
-    </div>
+    <h2>Filet Carpaccio</h2>
+    <p>Thinly sliced beef filet drizzled with olive oil and lemon.</p>
+    <div class="price">₪52</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Eggplant with Tahini">
-    <div>
-      <h2>Eggplant with Tahini</h2>
-      <p>Grilled eggplant topped with tahini and lemon dressing.</p>
-      <div class="price">₪35</div>
-    </div>
+    <h2>Eggplant with Tahini</h2>
+    <p>Grilled eggplant topped with tahini and lemon dressing.</p>
+    <div class="price">₪35</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Artichoke">
-    <div>
-      <h2>Artichoke</h2>
-      <p>Chef's special preparation of fresh artichoke hearts.</p>
-      <div class="price">₪40</div>
-    </div>
+    <h2>Artichoke</h2>
+    <p>Chef's special preparation of fresh artichoke hearts.</p>
+    <div class="price">₪40</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Cheese-Stuffed Mushrooms">
-    <div>
-      <h2>Cheese-Stuffed Mushrooms</h2>
-      <p>Fresh mushrooms filled with melted cheese blend.</p>
-      <div class="price">₪50</div>
-    </div>
+    <h2>Cheese-Stuffed Mushrooms</h2>
+    <p>Fresh mushrooms filled with melted cheese blend.</p>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Appetizer Platter">
-    <div>
-      <h2>Appetizer Platter</h2>
-      <p>Deluxe assortment of our finest appetizers.</p>
-      <div class="price">₪50</div>
-    </div>
+    <h2>Appetizer Platter</h2>
+    <p>Deluxe assortment of our finest appetizers.</p>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Mini Arayes">
-    <div>
-      <h2>Mini Arayes</h2>
-      <p>Grilled pita bread stuffed with seasoned minced meat.</p>
-      <div class="price">₪40</div>
-    </div>
+    <h2>Mini Arayes</h2>
+    <p>Grilled pita bread stuffed with seasoned minced meat.</p>
+    <div class="price">₪40</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Appetizer Combo (4)">
-    <div>
-      <h2>Appetizer Combo (4)</h2>
-      <p>Four types of appetizers served together.</p>
-      <div class="price">₪100</div>
-    </div>
+    <h2>Appetizer Combo (4)</h2>
+    <p>Four types of appetizers served together.</p>
+    <div class="price">₪100</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="Fried Cheese">
-    <div>
-      <h2>Fried Cheese</h2>
-      <p>Crispy fried cheese bites served hot.</p>
-      <div class="price">₪33</div>
-    </div>
+    <h2>Fried Cheese</h2>
+    <p>Crispy fried cheese bites served hot.</p>
+    <div class="price">₪33</div>
   </div>
 
   <div class="item-card">
     <img src="https://via.placeholder.com/120" alt="French Fries">
-    <div>
-      <h2>French Fries</h2>
-      <p>Golden fried potato sticks with a touch of salt.</p>
-      <div class="price">₪17</div>
-    </div>
+    <h2>French Fries</h2>
+    <p>Golden fried potato sticks with a touch of salt.</p>
+    <div class="price">₪17</div>
   </div>
 
 </div>
