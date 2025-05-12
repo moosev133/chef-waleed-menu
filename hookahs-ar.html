@@ -3,69 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>أرجيل - مطعم شيف وليد</title>
+  <title>الأراجيل - مطعم شيف وليد</title>
   <style>
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
       background-color: #0d0d0d;
-      color: #f0e6d2;
+      background-image: url('your-background-image.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
       text-align: center;
     }
     header img {
-      width: 180px;
+      width: 120px;
       margin: 2rem auto;
       display: block;
     }
     h1 {
-      font-size: 2.5rem;
-      color: #d4af37;
-      margin-bottom: 2rem;
+      margin: 30px 0;
+      font-size: 2.5em;
+      color: gold;
     }
-    .menu-items {
+    .menu-container {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 1000px;
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
     }
     .item-card {
       background-color: #1a1a1a;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 1rem;
-      text-align: right;
+      border: 2px solid gold;
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
     }
     .item-card img {
-      width: 120px;
-      height: 120px;
+      width: 100%;
+      height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      transition: transform 0.3s ease;
-      cursor: zoom-in;
-    }
-    .item-card img:hover {
-      transform: scale(1.6);
-      z-index: 2;
     }
     .item-card h2 {
-      margin: 0;
-      font-size: 1.3rem;
-      color: #ffd700;
-    }
-    .item-card p {
-      margin: 0.5rem 0;
-      font-size: 1rem;
+      margin: 10px 0 0;
+      font-size: 1.2em;
+      color: white;
     }
     .price {
-      color: #ffd700;
-      font-weight: bold;
-      margin-top: 0.5rem;
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: gold;
     }
     footer {
       margin: 2rem 0;
@@ -91,66 +85,50 @@
   <img src="res-logo2.png" alt="Restaurant Logo">
 </header>
 
-<h1>أرجيل</h1>
+<h1>الأراجيل</h1>
 
-<div class="menu-items">
-
+<div class="menu-container">
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="بلو بري" />
-    <div>
-      <h2>بلو بري</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="بلو بري" />
+    <h2>بلو بري</h2>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="ليمون نعنع" />
-    <div>
-      <h2>ليمون نعنع</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="ليمون نعنع" />
+    <h2>ليمون نعنع</h2>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="تفاحتين" />
-    <div>
-      <h2>تفاحتين</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="تفاحتين" />
+    <h2>تفاحتين</h2>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="شامي" />
-    <div>
-      <h2>شامي</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="شامي" />
+    <h2>شامي</h2>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="أخضر نعنع" />
-    <div>
-      <h2>أخضر نعنع</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="أخضر نعنع" />
+    <h2>أخضر نعنع</h2>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="تفاحه" />
-    <div>
-      <h2>تفاحه</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="تفاحه" />
+    <h2>تفاحه</h2>
+    <div class="price">₪50</div>
   </div>
 
   <div class="item-card">
-    <img src="https://via.placeholder.com/120x120.png?text=Image" alt="Love 66" />
-    <div>
-      <h2>Love 66</h2>
-      <div class="price">₪50</div>
-    </div>
+    <img src="your-image-url" alt="Love 66" />
+    <h2>Love 66</h2>
+    <div class="price">₪50</div>
   </div>
-
 </div>
 
 <footer>
