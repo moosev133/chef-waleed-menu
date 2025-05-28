@@ -99,7 +99,7 @@
   <div class="item-card">
     <img src="your-image-url" alt="אקס אל" />
     <h2>אקס אל</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
@@ -113,7 +113,7 @@
   <div class="item-card">
     <img src="your-image-url" alt="מיץ ענבים" />
     <h2>מיץ ענבים</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
@@ -131,7 +131,13 @@
   <div class="item-card">
     <img src="your-image-url" alt="קולה זירו" />
     <h2>קולה זירו</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="קולה" />
+    <h2>קולה</h2>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
@@ -146,11 +152,7 @@
     <div class="price">₪13</div>
   </div>
 
-  <div class="item-card">
-    <img src="your-image-url" alt="קולה" />
-    <h2>קולה</h2>
-    <div class="price">₪13</div>
-  </div>
+  
 
 </div>
 
@@ -158,6 +160,14 @@
 <footer>
   <a href="javascript:history.back()">חזרה לעמוד הקודם</a>
 </footer>
+
+  <script>
+  const sharedDrinkPrice = 13;
+  document.querySelectorAll('.smallDrinks').forEach(priceEl => {
+    priceEl.textContent = `₪${sharedDrinkPrice}`;
+  });
+</script>
+
 
 </body>
 </html>
