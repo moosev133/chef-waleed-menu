@@ -98,7 +98,7 @@
   <div class="item-card">
     <img src="your-image-url" alt="XL" />
     <h2>XL</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
@@ -112,7 +112,7 @@
   <div class="item-card">
     <img src="your-image-url" alt="Grape Juice" />
     <h2>Grape Juice</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
@@ -130,13 +130,19 @@
   <div class="item-card">
     <img src="your-image-url" alt="Coca-Cola Zero" />
     <h2>Coca-Cola Zero</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
+  </div>
+
+  <div class="item-card">
+    <img src="your-image-url" alt="Coca-Cola" />
+    <h2>Coca-Cola</h2>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
     <img src="your-image-url" alt="Sprite" />
     <h2>Sprite</h2>
-    <div class="price">₪13</div>
+    <div class="price smallDrinks"></div>
   </div>
 
   <div class="item-card">
@@ -145,11 +151,7 @@
     <div class="price">₪13</div>
   </div>
 
-  <div class="item-card">
-    <img src="your-image-url" alt="Coca-Cola" />
-    <h2>Coca-Cola</h2>
-    <div class="price">₪13</div>
-  </div>
+  
 
 </div>
 
@@ -157,6 +159,13 @@
 <footer>
   <a href="javascript:history.back()">Return to the previous page</a>
 </footer>
+
+  <script>
+  const sharedDrinkPrice = 13;
+  document.querySelectorAll('.smallDrinks').forEach(priceEl => {
+    priceEl.textContent = `₪${sharedDrinkPrice}`;
+  });
+</script>
 
 </body>
 </html>
