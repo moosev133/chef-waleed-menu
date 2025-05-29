@@ -152,6 +152,18 @@
     <div class="price smallDrinks"></div>
   </div>
 
+
+  <div class="item-card">
+    <img src="your-image-url" alt="زيرو كبير" />
+    <h2>زيرو كبير</h2>
+    <div class="price bigDrinks"></div>
+  </div>
+  <div class="item-card">
+    <img src="your-image-url" alt="كولا كبير" />
+    <h2>كولا كبير</h2>
+    <div class="price bigDrinks"></div>
+  </div>
+
   
 
 </div>
@@ -163,6 +175,13 @@
   <script>
   const sharedDrinkPrice = 13;
   document.querySelectorAll('.smallDrinks').forEach(priceEl => {
+    priceEl.textContent = `₪${sharedDrinkPrice}`;
+  });
+</script>
+
+  <script>
+  const sharedDrinkPrice = 20;
+  document.querySelectorAll('.bigDrinks').forEach(priceEl => {
     priceEl.textContent = `₪${sharedDrinkPrice}`;
   });
 </script>
