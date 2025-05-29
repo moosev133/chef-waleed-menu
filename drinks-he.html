@@ -176,17 +176,18 @@
 </footer>
 
   <script>
-  const sharedDrinkPrice = 13;
-  document.querySelectorAll('.smallDrinks').forEach(priceEl => {
-    priceEl.textContent = `₪${sharedDrinkPrice}`;
+  const smallDrinkPrice = 13;
+  const bigDrinkPrice = 20;
+
+  document.querySelectorAll('.smallDrinks').forEach(el => {
+    el.textContent = `₪${smallDrinkPrice}`;
+  });
+
+  document.querySelectorAll('.bigDrinks').forEach(el => {
+    el.textContent = `₪${bigDrinkPrice}`;
   });
 </script>
-    <script>
-  const sharedDrinkPrice = 20;
-  document.querySelectorAll('.bigDrinks').forEach(priceEl => {
-    priceEl.textContent = `₪${sharedDrinkPrice}`;
-  });
-</script>
+
 
 
 </body>
